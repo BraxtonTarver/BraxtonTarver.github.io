@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Braxton Tarver</title>
 <meta name="description" content="Braxton Tarver leads member loyalty and retention at eHealth. He designs operating models and mobilizes the people who run them.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/favicon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Braxton Tarver">
+<meta property="og:title" content="Braxton Tarver | I architect growth. I mobilize people.">
+<meta property="og:description" content="Member experience, operating design, and retention. Senior Director, Member Loyalty and Retention at eHealth.">
+<meta property="og:url" content="https://braxtontarver.github.io/">
+<meta property="og:image" content="https://braxtontarver.github.io/img/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Braxton Tarver on stage, with the words: I architect growth. I mobilize people.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap" rel="stylesheet">
@@ -157,8 +169,11 @@ html.js .rv.in{opacity:1;transform:none}
 .rtab small{display:block;margin-top:2px;font-size:.88rem;color:var(--moss)}
 .rtab[aria-selected="true"]{opacity:1;border-top-color:var(--signal)}
 .case{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;padding:40px 0 48px;border-top:1px solid var(--rule)}
-.case:last-of-type{border-bottom:1px solid var(--rule)}
 .case h3{font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.1}
+.also .chip{display:block;margin-bottom:14px}
+.kicker img,.chip{height:52px;width:auto;background:#fff;border:1px solid var(--rule);border-radius:8px;padding:8px 14px}
+.case .kicker{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.per{display:block;font-family:var(--display);font-weight:600;font-size:.85rem;color:var(--ink);margin-top:3px}
 .lead{font-family:var(--display);font-weight:800;font-size:clamp(3rem,6vw,4.6rem);letter-spacing:-.035em;line-height:1;margin:6px 0 4px}
 .lead-label{font-family:var(--display);font-weight:500;font-size:1.1rem;margin:0 0 26px}
 .case h3{margin-bottom:22px}
@@ -168,8 +183,8 @@ html.js .rv.in{opacity:1;transform:none}
 .nums{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;margin:0}
 .nums dt{font-family:var(--display);font-weight:700;font-size:1.55rem;letter-spacing:-.02em;line-height:1.1}
 .nums dd{margin:2px 0 0;font-size:.95rem;color:var(--moss);line-height:1.35}
-.also{display:grid;grid-template-columns:minmax(0,1.15fr) repeat(3,minmax(0,.65fr));gap:30px 40px;padding-top:36px;align-items:baseline}
-.also p{font-family:var(--display);font-weight:600;font-size:1.15rem;margin:0;grid-row:span 2}
+.also{display:grid;grid-template-columns:minmax(0,1.15fr) repeat(3,minmax(0,.65fr));gap:30px 40px;margin-top:72px;padding-top:48px;border-top:3px solid var(--pine);align-items:baseline}
+.also p{font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1.2;letter-spacing:-.01em;margin:0;grid-row:span 2}
 
 .todo{background:var(--signal);color:var(--pine);font-family:var(--display);font-size:.84em;font-weight:600;padding:1px 7px;border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .draft-note{font-family:var(--display);font-size:.95rem;margin-top:18px}
@@ -195,6 +210,28 @@ html.js .rv.in{opacity:1;transform:none}
 .aiop .lede{margin-top:22px}
 .aiop .steps{max-width:820px}
 .vom{background:var(--paper)}
+
+.earlier{margin:36px 0 0;max-width:46em;border-left:3px solid var(--signal);padding-left:16px;font-size:1.05rem}
+.earlier b{display:block;font-family:var(--display);font-weight:600}
+
+.opob-head{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:48px;align-items:center}
+.opob-logo{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:14px 18px;width:100%}
+
+.wheel-wrap{display:grid;grid-template-columns:minmax(0,1fr) 380px minmax(0,1fr);gap:56px;align-items:center;margin-top:52px}
+.wcol{display:flex;flex-direction:column;gap:64px}
+.wtxt{opacity:.38;transition:opacity .25s;cursor:pointer}
+.wtxt.on{opacity:1}
+.wtxt h3{font-size:1.6rem;margin-bottom:10px}
+.wtxt p{margin:0;font-size:1.02rem}
+.wheel{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px;aspect-ratio:1}
+.wq{appearance:none;border:0;cursor:pointer;background:var(--mist);color:var(--ink);font-family:var(--display);font-weight:700;font-size:1.25rem;transition:background .25s,color .25s}
+.wq[aria-pressed="true"]{background:var(--pine);color:var(--paper);box-shadow:inset 0 -6px 0 var(--signal)}
+.q-listen{grid-area:1/1;border-radius:100% 0 0 0;padding:26% 0 0 22%}
+.q-read{grid-area:1/2;border-radius:0 100% 0 0;padding:26% 22% 0 0}
+.q-report{grid-area:2/2;border-radius:0 0 100% 0;padding:0 22% 26% 0}
+.q-respond{grid-area:2/1;border-radius:0 0 0 100%;padding:0 0 26% 22%}
+.q-report[aria-pressed="true"],.q-respond[aria-pressed="true"]{box-shadow:inset 0 6px 0 var(--signal)}
+.whub{position:absolute;left:50%;top:50%;width:104px;height:104px;margin:-52px 0 0 -52px;border-radius:50%;background:var(--paper);display:grid;place-items:center;color:var(--pine);pointer-events:none}
 
 /* built */
 .built{background:var(--pine);color:var(--paper)}
@@ -283,7 +320,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
   .tab .when{margin-top:8px}
   .panel{grid-template-columns:1fr;gap:14px;padding:26px 24px;margin-top:28px}
   .case{grid-template-columns:1fr;gap:20px;padding:36px 0}
-  .also{grid-template-columns:1fr 1fr;gap:22px}
+  .also{grid-template-columns:1fr 1fr;gap:22px;margin-top:48px;padding-top:36px}
   .also p{grid-column:1/-1}
   .model{grid-template-columns:1fr;gap:24px;margin-top:40px}
   .creds{grid-template-columns:1fr}
@@ -321,6 +358,14 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
   .mtabs>.mt-item:not(.on){display:none}
   .creds,.galv ol{margin-top:0;border-top:0}
   .opob{grid-template-columns:1fr;gap:18px;margin-top:30px}
+  .wheel-wrap{grid-template-columns:1fr;gap:26px;margin-top:32px}
+  .wheel{order:-1;width:min(300px,100%);margin:0 auto}
+  .wq{font-size:1.05rem}
+  .whub{width:80px;height:80px;margin:-40px 0 0 -40px}
+  .wcol{display:contents}
+  .wtxt:not(.on){display:none}
+  .opob-head{grid-template-columns:1fr;gap:22px}
+  .opob-logo{max-width:300px}
   .cred,.cred+.cred,.cred.next{border-top:0;margin-top:0;padding:24px 0 0}
   .galv li,.galv li+li{padding:24px 0 0}
   .mtabs>.model{margin-top:0;border-top:0;padding-top:26px}
@@ -412,7 +457,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
         </div>
         <div>
           <h3>I mobilize</h3>
-          <p>I help people understand the plan, what it asks of them, and why their work matters.</p>
+          <p>I help people understand the plan, what it asks of them, and why their work matters. At Blue Shield of California I scored 100 of 100 on the Great Place to Work manager quality index, 2017 to 2021.</p>
         </div>
       </div>
     </div>
@@ -422,7 +467,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
 <section class="moments" id="moments">
   <div class="wrap">
     <h2>The moments that decide a member relationship</h2>
-    <p class="lede">Choosing a plan, using it for the first time, getting help when something goes wrong, and deciding whether to stay shape the member relationship. I design the work around those moments, assign ownership, and measure the outcome.</p>
+    <p class="lede">Choosing a plan, using it for the first time, getting help when something goes wrong, and deciding whether to stay shape the member relationship. I design the work around those moments, assign ownership, and measure the outcome. My tools are a journey map for the member's side and a service blueprint for the work behind it.</p>
 
     <div class="track">
       <div class="tabs" role="tablist" aria-label="Four moments">
@@ -455,7 +500,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
     </div>
     <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
       <h3>What do we do when the plan itself changes?</h3>
-      <p>Every fall the member decides again. I put proactive outreach ahead of that decision: 144,000 members reached and $18.4M in incremental revenue, because we acted before the relationship was at risk.</p>
+      <p>Every fall the member decides again. I put proactive outreach ahead of that decision: In 2025 that meant 144,000 members reached and $18.4M in revenue retained, because we acted before the relationship was at risk.</p>
     </div>
   </div>
 </section>
@@ -484,7 +529,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
       <li data-label="Agile" class="mt-item cred">
         <p class="stage">Agile</p>
         <h3>Certified SAFe Agile Architect and Scrum Master</h3>
-        <p class="by"><mark class="todo">add Scrum Master issuer</mark></p>
+        <p class="by">Scaled Agile, Inc.</p>
         <p>Shipping in increments and learning from each one.</p>
       </li>
       <li data-label="AI" class="mt-item cred next">
@@ -583,35 +628,35 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
     <h2>Selected results</h2>
     
     <div class="rtabs" role="tablist" aria-label="Selected results">
-      <button class="rtab" role="tab" id="r1" aria-controls="c1" aria-selected="true"><b>$18.4M</b><span>incremental revenue</span><small>Member engagement</small></button>
-      <button class="rtab" role="tab" id="r2" aria-controls="c2" aria-selected="false" tabindex="-1"><b>$42M</b><span>administrative cost savings</span><small>Operating model</small></button>
-      <button class="rtab" role="tab" id="r3" aria-controls="c3" aria-selected="false" tabindex="-1"><b>$11.3M</b><span>application value protected</span><small>Enrollment and recovery</small></button>
-      <button class="rtab" role="tab" id="r4" aria-controls="c4" aria-selected="false" tabindex="-1"><b>$2.63M</b><span>favorable to plan</span><small>Transformation</small></button>
+      <button class="rtab" role="tab" id="r4" aria-controls="c4" aria-selected="true"><b>$2.63M</b><span>favorable to plan</span><small>Transformation, 2025</small></button>
+      <button class="rtab" role="tab" id="r2" aria-controls="c2" aria-selected="false" tabindex="-1"><b>$42M</b><span>administrative cost savings</span><small>Operating model, 2018</small></button>
+      <button class="rtab" role="tab" id="r3" aria-controls="c3" aria-selected="false" tabindex="-1"><b>$11.3M</b><span>application value protected</span><small>Enrollment and recovery, 2025</small></button>
+      <button class="rtab" role="tab" id="r1" aria-controls="c1" aria-selected="false" tabindex="-1"><b>$18.4M</b><span>revenue retained</span><small>Member engagement, 2025</small></button>
     </div>
 
-    <article class="case" role="tabpanel" id="c1" aria-labelledby="r1">
+    <article class="case" role="tabpanel" id="c1" aria-labelledby="r1" hidden>
       <div>
-        <p class="kicker">eHealth, member engagement, 2023 to present</p>
-        <dl class="nums"><div><dt>144,000</dt><dd>members reached</dd></div></dl>
+        <p class="kicker"><img src="img/logo-ehealth.png" alt="eHealth"><span>Member engagement, 2025</span></p>
+        <dl class="nums"><div><dt>144,000</dt><dd>members reached</dd></div><div><dt>23,000+</dt><dd>members who changed plans and stayed with eHealth</dd></div></dl>
       </div>
       <div>
         <h3>What if we reached members before they had a reason to leave?</h3>
         <dl class="why">
-          <dt>What I did</dt><dd>My team proactively reached 144,000 members through eHealth's loyalty and retention work.</dd>
-          <dt>Why it matters</dt><dd>The outreach generated $18.4M in incremental revenue.</dd>
+          <dt>What I did</dt><dd>In 2025 my team proactively reached 144,000 members whose coverage was at risk, through Operation Protect Our Book.</dd>
+          <dt>Why it matters</dt><dd>The outreach retained $18.4M in revenue that eHealth would otherwise have lost.</dd>
         </dl>
       </div>
     </article>
 
     <article class="case" role="tabpanel" id="c2" aria-labelledby="r2" hidden>
       <div>
-        <p class="kicker">Blue Shield of California, product and operations, 2014 to 2023</p>
-        <dl class="nums"><div><dt>+34%</dt><dd>online enrollment</dd></div><div><dt>+21%</dt><dd>above enrollment targets</dd></div><div><dt>30+</dt><dd>regulatory filings, zero compliance errors</dd></div><div><dt>6M</dt><dd>lives in the market share I contributed to by my departure</dd></div></dl>
+        <p class="kicker"><img src="img/logo-bsc.png" alt="Blue Shield of California"><span>Product and operations, 2018</span></p>
+        <dl class="nums"><div><dt>+34%</dt><dd>online enrollment</dd></div><div><dt>+21%</dt><dd>above enrollment targets</dd></div><div><dt>30+</dt><dd>regulatory filings, zero compliance errors</dd></div><div><dt>$9.5M</dt><dd>saved each year on regulated communications<span class="per">Starting 2018</span></dd></div><div><dt>6M</dt><dd>lives in the market share I contributed to by my departure</dd></div></dl>
       </div>
       <div>
         <h3>Where does administrative cost come from, and what would members rather do themselves?</h3>
         <dl class="why">
-          <dt>What I did</dt><dd>Redesigned the operating model across product, research, operations, and digital self-service. Stage-gate evaluation and customer research decided which concepts earned investment.</dd>
+          <dt>What I did</dt><dd>Redesigned the operating model across product, research, operations, and digital self-service. Stage-gate evaluation and customer research decided which concepts earned investment, and I built the customer personas and journey maps that guided product and marketing decisions.</dd>
           <dt>Why it matters</dt><dd>Lower administrative cost and a better member experience came out of the same redesign: $42M saved while online enrollment rose 34%, through 30+ regulatory filings with zero compliance errors.</dd>
         </dl>
       </div>
@@ -619,41 +664,42 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
 
     <article class="case" role="tabpanel" id="c3" aria-labelledby="r3" hidden>
       <div>
-        <p class="kicker">eHealth, enrollment and service recovery, 2023 to present</p>
-        <dl class="nums"><div><dt>93.8%</dt><dd>sent-to-approved rate</dd></div><div><dt>11.7%</dt><dd>early cancellation rate, a 10-year best</dd></div><div><dt>5.7%</dt><dd>declined or withdrawn, a 9-year best</dd></div></dl>
+        <p class="kicker"><img src="img/logo-ehealth.png" alt="eHealth"><span>Enrollment and service recovery, 2025</span></p>
+        <dl class="nums"><div><dt>93.8%</dt><dd>sent-to-approved rate, up from 92.1%<span class="per">2025</span></dd></div><div><dt>11.7%</dt><dd>early cancellation rate, a 10-year best<span class="per">2025</span></dd></div><div><dt>5.7%</dt><dd>declined or withdrawn, a 9-year best<span class="per">2025</span></dd></div><div><dt>18,340</dt><dd>applications saved<span class="per">2025</span></dd></div></dl>
       </div>
       <div>
         <h3>What happens to an application after the sale?</h3>
         <dl class="why">
           <dt>What I did</dt><dd>Mapped the path from submitted application to approved member, gave every step an owner across internal teams and carriers, and built recovery into the process.</dd>
-          <dt>Why it matters</dt><dd>The friction sat in the handoffs, where no single team owned the member. Closing them produced a 93.8% approval rate and the lowest early cancellation rate in ten years.</dd>
+          <dt>Why it matters</dt><dd>The friction sat in the handoffs, where no single team owned the member. Closing them produced a 93.8% approval rate, a ten-year best early cancellation rate, and $11.3M in application value protected in 2025.</dd>
         </dl>
       </div>
     </article>
 
-    <article class="case" role="tabpanel" id="c4" aria-labelledby="r4" hidden>
+    <article class="case" role="tabpanel" id="c4" aria-labelledby="r4">
       <div>
-        <p class="kicker">eHealth, transformation at scale, 2023 to present</p>
-        <dl class="nums"><div><dt>$1.2M</dt><dd>structural savings</dd></div><div><dt>400</dt><dd>seasonal advocates mobilized</dd></div><div><dt>20</dt><dd>supervisors mobilized</dd></div><div><dt>$600K</dt><dd>saved on seasonal staffing while beating prior-year enrollment</dd></div></dl>
+        <p class="kicker"><img src="img/logo-ehealth.png" alt="eHealth"><span>Transformation at scale, 2025</span></p>
+        <dl class="nums"><div><dt>$1.2M</dt><dd>structural savings<span class="per">2025</span></dd></div><div><dt>400</dt><dd>seasonal advocates mobilized</dd></div><div><dt>20</dt><dd>supervisors mobilized</dd></div><div><dt>$600K</dt><dd>saved on seasonal staffing while beating prior-year enrollment<span class="per">2025</span></dd></div></dl>
       </div>
       <div>
         <h3>Can you rebuild the operating model without the operation slowing down?</h3>
         <dl class="why">
-          <dt>What I did</dt><dd>Reengineered operating models and vendor partnerships in the middle of an enterprise transformation, and stood up 400 seasonal advocates and 20 supervisors with no break in service.</dd>
-          <dt>Why it matters</dt><dd>We maintained service throughout the transition and finished $2.63M favorable to plan, with $1.2M in structural savings. Enrollment exceeded the prior year.</dd>
+          <dt>What I did</dt><dd>Reengineered operating models and vendor partnerships in the middle of an enterprise transformation, including a large move of work back onshore, and stood up 400 seasonal advocates and 20 supervisors with no break in service.</dd>
+          <dt>Why it matters</dt><dd>We maintained service throughout the transition. In 2025 the organization finished $2.63M favorable to plan and delivered $1.2M in structural savings, with enrollment above the prior year.</dd>
         </dl>
       </div>
     </article>
 
     <dl class="nums also">
-      <p>Cross-sell and employer group results</p>
-      <div><dt>149%</dt><dd>of major medical sales goal</dd></div>
+      <p><img class="chip" src="img/logo-ehealth.png" alt="eHealth">Cross-sell and employer group results, 2025</p>
+      <div><dt>149%</dt><dd>of Major Medical application goal, 4,479 against 3,000</dd></div>
+      <div><dt>146%</dt><dd>of Hospital Indemnity application goal, 2,333 against 1,600</dd></div>
+      <div><dt>424%</dt><dd>year-over-year growth in Hospital Indemnity applications</dd></div>
+      <div><dt>94.5%</dt><dd>health risk assessment attach rate, against a 90% goal</dd></div>
       <div><dt>~3,200</dt><dd>net-new IFP members through ICHRA</dd></div>
       <div><dt>94%</dt><dd>ICHRA retention</dd></div>
-      <div><dt>424%</dt><dd>year-over-year growth in Hospital Indemnity applications</dd></div>
-      <div><dt>$5.74M</dt><dd>expected gross margin from Hospital Indemnity, $1.34M over target</dd></div>
-      <div><dt>94.5%</dt><dd>attachment on a new HRA collection capability, against a 90% goal</dd></div>
     </dl>
+    <p class="src">eHealth figures cover completed periods, none later than the third quarter of 2026. Nothing on this page is a forecast.</p>
   </div>
 </section>
 
@@ -662,15 +708,15 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
     <h2>AI in the operation</h2>
     <p class="lede">In 2025 I introduced an AI agent into customer service. It answers first, handles the routine questions, and hands everything else to a person with the context attached.</p>
     <dl class="nums opob">
-      <div><dt>1 second</dt><dd>average wait when the agent answers, against minutes in a human queue</dd></div>
-      <div><dt>75,000+</dt><dd>customer service calls answered by the agent across its first two seasons, every one of them picked up</dd></div>
+      <div><dt>1 second</dt><dd>average wait when the agent answered in 2025, against minutes in a human queue</dd></div>
+      <div><dt>40,000+</dt><dd>customer service calls answered by the agent in 2025, its first year, every one of them picked up</dd></div>
       <div><dt>77%</dt><dd>of callers rated the experience exceptional, as eHealth has reported publicly</dd></div>
     </dl>
     <p class="src">Satisfaction figure: <a href="https://news.ehealthinsurance.com/news/ehealth-advances-its-ai-strategy-with-expanded-voice-agent-capabilities">eHealth announcement, November 2025</a>.</p>
     <ol class="steps">
       <li><div><strong>Start with the member problem</strong><span>People were waiting on hold to ask where their application stood, when their ID card would arrive, or who to call about a bill. Those became the agent's first jobs.</span></div></li>
       <li><div><strong>Keep a person accountable</strong><span>Most calls still reach a human, by design. The agent takes what it can finish and routes the rest, with privacy and compliance in the room from the start.</span></div></li>
-      <li><div><strong>Scale what improves</strong><span>The share of calls the agent resolves on its own more than doubled from its first season to its second.</span></div></li>
+      <li><div><strong>Scale what improves</strong><span>We track how many calls the agent resolves on its own and widen its job as that number improves.</span></div></li>
     </ol>
   </div>
 </section>
@@ -679,19 +725,36 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
   <div class="wrap">
     <h2>Voice of the member, built from scratch</h2>
     <p class="lede">I established eHealth's NPS program and the reporting that turns member feedback into action. Findings go to the teams responsible for improvements, and we follow up with members.</p>
-    <ol class="mtabs">
-      <li class="mt-item" data-label="Listen"><h3>Listen</h3><p>Three sources in one view: the NPS program, public reviews, and what members post unprompted on social and review sites.</p></li>
-      <li class="mt-item" data-label="Read"><h3>Read</h3><p>Every unhappy review and every detractor comment gets read and assigned one main reason. Scores say how members feel. Reasons say what to fix.</p></li>
-      <li class="mt-item" data-label="Report"><h3>Report</h3><p>A mid-season report goes to the executive team while there is still time to act, with the limits of the data stated plainly.</p></li>
-      <li class="mt-item" data-label="Respond"><h3>Respond</h3><p>I answer public reviews myself, under my own name. At Blue Shield of California, the research team I led used voice-of-customer insight to beat engagement benchmarks by 41% to 89%.</p></li>
-    </ol>
+    <div class="wheel-wrap">
+      <div class="wcol">
+        <div class="wtxt" data-k="Listen" id="w-Listen"><h3>Listen</h3><p>Three sources in one view: the NPS program, public reviews, and what members post unprompted on social and review sites.</p></div>
+        <div class="wtxt" data-k="Respond" id="w-Respond"><h3>Respond</h3><p>I designed a service recovery function, so a member who reports a problem gets one owner and a resolution. I also answer public reviews myself, under my own name.</p></div>
+      </div>
+      <div class="wheel" role="group" aria-label="The feedback loop">
+        <button type="button" class="wq q-listen" data-k="Listen" aria-controls="w-Listen" aria-pressed="false">Listen</button>
+        <button type="button" class="wq q-read" data-k="Read" aria-controls="w-Read" aria-pressed="false">Read</button>
+        <button type="button" class="wq q-report" data-k="Report" aria-controls="w-Report" aria-pressed="false">Report</button>
+        <button type="button" class="wq q-respond" data-k="Respond" aria-controls="w-Respond" aria-pressed="false">Respond</button>
+        <span class="whub" aria-hidden="true"><svg viewBox="0 0 48 48" width="44" height="44"><path d="M37 24a13 13 0 1 1-4.2-9.6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M34 6v9h-9" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      <div class="wcol">
+        <div class="wtxt" data-k="Read" id="w-Read"><h3>Read</h3><p>Every unhappy review and every detractor comment gets read and assigned one main reason. Scores say how members feel. Reasons say what to fix.</p></div>
+        <div class="wtxt" data-k="Report" id="w-Report"><h3>Report</h3><p>The executive team gets a mid-season report while there is still time to act. It shows what changed against last year, the main reasons behind unhappy feedback, and what to watch before the season ends. Each finding goes to the team that owns the fix.</p></div>
+      </div>
+    </div>
+    <p class="earlier"><b>Earlier, at Blue Shield of California</b>I raised NPS by 10 points between 2022 and 2023 with an education campaign. We used every channel to teach members the eight basic benefits already included in their plan. The research team I led also used voice-of-customer insight to beat engagement benchmarks by 41% to 89%.</p>
   </div>
 </section>
 
 <section class="galv" id="people">
   <div class="wrap">
+    <div class="opob-head">
+      <div>
     <h2>Mobilizing people, in practice</h2>
     <p class="lede">Every fall, Medicare members get an Annual Notice of Change. For a fast-growing number, it says their plan is ending. I built a response to that moment before it became an industry-wide problem, and named it Operation Protect Our Book.</p>
+      </div>
+      <img class="opob-logo" src="img/logo-opob.png" alt="Operation Protect Our Book logo" width="900" height="420">
+    </div>
     <dl class="nums opob">
       <div><dt>1%</dt><dd>of Medicare Advantage enrollees were forced out of their plan in a typical year, 2018 through 2024</dd></div>
       <div><dt>10%</dt><dd>were forced out heading into 2026, as insurers left markets</dd></div>
@@ -701,7 +764,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
     <ol class="mtabs">
       <li class="mt-item" data-label="Moment"><h3>The moment</h3><p>A termination notice turns a settled member into a shopper overnight. They did nothing wrong, and now they have a deadline. How they are treated in those weeks decides whether they stay.</p></li>
       <li class="mt-item" data-label="Rally"><h3>The rally</h3><p>I named the effort Operation Protect Our Book and used the kickoff to make the responsibility clear: help affected members understand their options and take action before their coverage ended.</p></li>
-      <li class="mt-item" data-label="Work"><h3>The work</h3><p>We built the muscle early: identify the members whose plans are ending, be ready when they call, and help each one into a plan that fits.</p></li>
+      <li class="mt-item" data-label="Work"><h3>The work</h3><p>We built the muscle early: identify the members whose plans are ending, be ready when they call, and help each one into a plan that fits. I led the end-to-end design, which touched more than ten teams and passed through six phase gates.</p></li>
       <li class="mt-item" data-label="Result"><h3>The result</h3><p>As the number of affected members grew, the share who cancelled and left fell year over year.</p></li>
     </ol>
   </div>
@@ -761,6 +824,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
       <ul class="reach">
         <li><span>Email</span><a href="mailto:Btarver8@gmail.com">Btarver8@gmail.com</a></li>
         <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/braxtontarver/">linkedin.com/in/braxtontarver</a></li>
+        <li><span>Summary</span><a href="Braxton-Tarver-Summary.pdf">Download the one-page summary (PDF)</a></li>
       </ul>
     </div>
     <img src="img/portrait-bw.jpg" alt="Black and white portrait of Braxton Tarver" width="1100" height="1375" loading="lazy">
@@ -840,8 +904,24 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
     if(window.matchMedia&&window.matchMedia('(max-width: 900px)').matches)pick('systems');
   });
 
+  /* feedback-loop wheel */
+  $('.wheel-wrap').forEach(function(w){
+    var qs=$('.wq',w),ts=$('.wtxt',w);
+    function pick(k){
+      qs.forEach(function(q){q.setAttribute('aria-pressed',q.getAttribute('data-k')===k?'true':'false');});
+      ts.forEach(function(t){t.classList.toggle('on',t.getAttribute('data-k')===k);});
+    }
+    qs.concat(ts).forEach(function(el){
+      var k=el.getAttribute('data-k');
+      el.addEventListener('click',function(){pick(k);});
+      el.addEventListener('mouseenter',function(){pick(k);});
+      el.addEventListener('focus',function(){pick(k);});
+    });
+    pick('Listen');
+  });
+
   /* reveal on scroll */
-  var groups=['main h2','main .lede','.about-grid>img','.about-grid>div>p','.modes>div','.track','.models-head','.creds','.model','.chips','.rtabs','.also>div','.pov-grid>div>p','.opob>div','.galv ol','.item','.steps li','.study','.stop','.contact h2','.contact .lede','.reach li','.contact-grid>img','.figures dl div'];
+  var groups=['main h2','main .lede','.about-grid>img','.about-grid>div>p','.modes>div','.track','.models-head','.creds','.model','.chips','.rtabs','.also>div','.pov-grid>div>p','.opob>div','.galv ol','.wheel-wrap','.earlier','.item','.steps li','.study','.stop','.contact h2','.contact .lede','.reach li','.contact-grid>img','.figures dl div'];
   var els=[];
   groups.forEach(function(q){$(q).forEach(function(el){
     if(els.indexOf(el)>-1)return; els.push(el); el.classList.add('rv');

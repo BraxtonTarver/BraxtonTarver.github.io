@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Braxton Tarver</title>
+<meta name="description" content="Braxton Tarver leads member loyalty and retention at eHealth. He designs operating models and mobilizes the people who run them.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/favicon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Braxton Tarver">
+<meta property="og:title" content="Braxton Tarver | I architect growth. I mobilize people.">
+<meta property="og:description" content="Member experience, operating design, and retention. Senior Director, Member Loyalty and Retention at eHealth.">
+<meta property="og:url" content="https://braxtontarver.github.io/">
+<meta property="og:image" content="https://braxtontarver.github.io/img/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Braxton Tarver on stage, with the words: I architect growth. I mobilize people.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap" rel="stylesheet">
+<script>document.documentElement.className='js';</script>
+<style>
+:root{
+  --pine:#023c5b;
+  --pine-2:#0a4a6c;
+  --paper:#f7f7f7;
+  --mist:#e4ecf1;
+  --ink:#10222d;
+  --moss:#3d5868;
+  --signal:#a8cf3a;
+  --rule:rgba(16,34,45,.16);
+  --rule-dark:rgba(247,247,247,.2);
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Source Serif 4",Georgia,serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;letter-spacing:-.02em;margin:0}
+h2{font-size:clamp(2rem,4.4vw,3.25rem)}
+p{margin:0 0 1em}
+.lede{font-size:1.25rem;line-height:1.55;max-width:38em}
+.kicker{font-family:var(--display);font-weight:500;font-size:.95rem;color:var(--moss);margin:0 0 1.2rem}
+
+/* hero */
+.hero{background:var(--pine);color:var(--paper);position:relative;overflow:hidden}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-family:var(--display)}
+.nav .name{font-weight:700;font-size:1.05rem;text-decoration:none}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:.95rem;opacity:.8}
+.nav ul a:hover{opacity:1;text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:6px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:48px;align-items:end;padding-top:48px}
+.hero-copy{padding-bottom:64px}
+.hero h1{font-size:clamp(2.9rem,8.2vw,6.6rem);font-weight:800;line-height:.95;letter-spacing:-.035em}
+.hero h1 span{display:block}
+.hero .lede{margin-top:28px;color:rgba(247,247,247,.86)}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;font-family:var(--display);font-weight:600}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;text-decoration:none;font-size:1rem}
+.btn-solid{background:var(--signal);color:var(--pine)}
+.btn-line{border:1.5px solid var(--rule-dark)}
+.btn-line:hover{border-color:var(--paper)}
+.hero-photo{align-self:end;margin:0}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:60% 20%;border-radius:10px 10px 0 0}
+.figures{border-top:1px solid var(--rule-dark);background:var(--pine-2)}
+.figures dl{display:grid;grid-template-columns:repeat(4,1fr);margin:0}
+.figures dl div{padding:26px 24px 26px 0}
+.figures dl div+div{padding-left:24px;border-left:1px solid var(--rule-dark)}
+.figures dt{font-family:var(--display);font-weight:700;font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-.02em}
+.figures dd{margin:2px 0 0;font-size:.95rem;color:rgba(247,247,247,.72)}
+
+section{padding:96px 0;scroll-margin-top:56px}
+
+/* reveal on scroll */
+html.js .rv{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+html.js .rv.in{opacity:1;transform:none}
+.figures dt,.nums dt,.rtab b{font-variant-numeric:tabular-nums}
+
+/* sticky section nav */
+.subnav{position:sticky;top:0;z-index:20;background:rgba(247,247,247,.88);-webkit-backdrop-filter:saturate(1.6) blur(14px);backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--rule);font-family:var(--display)}
+.subnav .wrap{display:flex;align-items:center;gap:24px;height:52px}
+.subnav .who{font-weight:700;text-decoration:none;margin-right:auto;white-space:nowrap}
+.subnav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+.subnav ul::-webkit-scrollbar{display:none}
+.subnav ul a{text-decoration:none;font-size:.92rem;color:var(--moss);white-space:nowrap;padding:16px 0;display:block;border-bottom:2px solid transparent}
+.subnav ul a.on{color:var(--ink);border-bottom-color:var(--signal)}
+.subnav .go{background:var(--pine);color:var(--paper);text-decoration:none;font-weight:600;font-size:.88rem;padding:7px 15px;border-radius:999px;white-space:nowrap}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:64px;align-items:start}
+.about-grid img{border-radius:10px;aspect-ratio:1/1;object-fit:cover}
+.about h2{margin-bottom:26px}
+.modes{display:grid;grid-template-columns:1fr 1fr;margin-top:40px;border-top:1px solid var(--rule)}
+.modes div{padding:28px 28px 0 0}
+.modes div+div{padding-left:28px;border-left:1px solid var(--rule)}
+.modes h3{font-size:1.7rem;margin-bottom:10px}
+.modes p{margin:0;font-size:1rem}
+.proof{display:grid;grid-template-columns:1fr 1fr;margin:36px 0 0;background:var(--signal);color:var(--pine);border-radius:10px}
+.proof div{padding:24px 26px}
+.proof div+div{border-left:1px solid rgba(2,60,91,.28)}
+.proof dt{font-family:var(--display);font-weight:700;font-size:2rem;letter-spacing:-.02em;line-height:1.05;font-variant-numeric:tabular-nums}
+.proof dd{margin:8px 0 0;font-size:1rem;line-height:1.45}
+
+/* four moments */
+.moments{background:var(--mist)}
+.moments .lede{margin-top:22px}
+.track{position:relative;margin-top:56px}
+.track::before{content:"";position:absolute;left:0;right:0;top:13px;height:2px;background:var(--pine)}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+.tabs::after{content:"Coverage starts";position:absolute;left:25%;top:-34px;transform:translateX(-50%);font-family:var(--display);font-size:.85rem;color:var(--moss);white-space:nowrap}
+.tabs::before{content:"";position:absolute;left:25%;top:-10px;height:48px;border-left:2px dashed var(--moss)}
+.tab{appearance:none;border:0;background:none;text-align:left;padding:0 16px 0 0;cursor:pointer;font-family:var(--display);color:var(--ink)}
+.tab .dot{display:block;width:28px;height:28px;border-radius:50%;background:var(--mist);border:2px solid var(--pine);position:relative;z-index:1}
+.tab .when{display:block;margin-top:14px;font-size:.85rem;color:var(--moss)}
+.tab .what{display:block;font-weight:700;font-size:clamp(1.05rem,2vw,1.45rem);letter-spacing:-.01em;line-height:1.15}
+.tab[aria-selected="true"] .dot{background:var(--signal);box-shadow:0 0 0 6px rgba(168,207,58,.35)}
+.tab[aria-selected="true"] .what{text-decoration:underline;text-decoration-color:var(--signal);text-decoration-thickness:4px;text-underline-offset:6px}
+.panel{margin-top:40px;background:var(--paper);border-radius:10px;padding:34px 36px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:40px}
+.panel[hidden]{display:none}
+.panel h3{font-size:1.6rem;line-height:1.15}
+.panel p{margin:0}
+
+/* models */
+.models{background:var(--pine);color:var(--paper)}
+.models .lede{margin-top:22px;color:rgba(247,247,247,.86)}
+.models-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.pause{appearance:none;background:none;color:var(--paper);border:1.5px solid var(--rule-dark);border-radius:999px;padding:9px 18px;font-family:var(--display);font-weight:600;font-size:.95rem;cursor:pointer}
+.pause:hover{border-color:var(--paper)}
+.model{margin-top:56px;padding-top:36px;border-top:1px solid var(--rule-dark);display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:48px;align-items:start}
+.model h3{font-size:1.7rem;line-height:1.12;margin-bottom:14px}
+.model p{font-size:1.02rem;color:rgba(247,247,247,.86)}
+.model .practice{border-left:3px solid var(--signal);padding-left:14px;color:var(--paper)}
+.model .practice b{font-family:var(--display);font-weight:600;display:block}
+.fig{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.fig svg{display:block;width:100%;min-width:600px;height:auto;font-family:var(--display)}
+.fig .ln{fill:none;stroke:var(--paper);stroke-width:2.5}
+.fig .thin{fill:none;stroke:rgba(247,247,247,.45);stroke-width:1.5;stroke-dasharray:5 6}
+.fig .fillonly{fill:rgba(247,247,247,.07);stroke:none}
+.fig .mode{font-size:14px;font-weight:600;fill:var(--paper)}
+.fig .soft{fill:rgba(247,247,247,.07);stroke:var(--paper);stroke-width:2.5}
+.fig text{fill:var(--paper);font-size:17px}
+.fig .sm{font-size:15px;fill:rgba(247,247,247,.78)}
+.fig .b{font-weight:700}
+.fig .dot{fill:var(--signal)}
+.fig .sweep{stroke:var(--signal);stroke-width:5;stroke-linecap:round}
+.fig .bar{fill:var(--signal)}
+.fig .node{fill:var(--pine);stroke:var(--paper);stroke-width:2.5}
+
+.creds{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.cred{border-top:4px solid var(--signal);padding:22px 22px 4px 0}
+.cred+.cred{padding-left:22px;border-left:1px solid var(--rule-dark)}
+.cred.next{border-top-style:dashed}
+.cred .stage{font-family:var(--display);font-weight:600;font-size:.95rem;color:var(--signal);margin:0 0 10px}
+.cred h3{font-size:1.4rem;line-height:1.15;margin-bottom:8px}
+.cred .by{font-family:var(--display);font-size:.98rem;color:rgba(247,247,247,.75);margin:0 0 10px}
+.cred p:last-child{font-size:1rem;color:rgba(247,247,247,.86);margin:0}
+
+.also-cred{font-family:var(--display);font-size:1rem;color:rgba(247,247,247,.78);margin:28px 0 0}
+
+/* results */
+.results h2{margin-bottom:14px}
+.case[hidden]{display:none}
+.rtabs{display:grid;grid-template-columns:repeat(4,1fr);margin-top:44px}
+.rtab{appearance:none;background:none;border:0;display:flex;flex-direction:column;justify-content:flex-start;border-top:4px solid var(--rule);text-align:left;padding:20px 18px 22px 0;cursor:pointer;color:var(--ink);font-family:var(--display);opacity:.5;transition:opacity .3s}
+.rtab:hover{opacity:.8}
+.rtab b{display:block;font-weight:800;font-size:clamp(1.8rem,3.6vw,3rem);letter-spacing:-.035em;line-height:1}
+.rtab span{display:block;margin-top:8px;font-weight:500;font-size:1rem}
+.rtab small{display:block;margin-top:2px;font-size:.88rem;color:var(--moss)}
+.rtab[aria-selected="true"]{opacity:1;border-top-color:var(--signal)}
+.case{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;padding:40px 0 48px;border-top:1px solid var(--rule)}
+.case h3{font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.1}
+.also .chip{display:block;margin-bottom:14px}
+.kicker img,.chip{height:52px;width:auto;background:#fff;border:1px solid var(--rule);border-radius:8px;padding:8px 14px}
+.case .kicker{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.per{display:block;font-family:var(--display);font-weight:600;font-size:.85rem;color:var(--ink);margin-top:3px}
+.lead{font-family:var(--display);font-weight:800;font-size:clamp(3rem,6vw,4.6rem);letter-spacing:-.035em;line-height:1;margin:6px 0 4px}
+.lead-label{font-family:var(--display);font-weight:500;font-size:1.1rem;margin:0 0 26px}
+.case h3{margin-bottom:22px}
+.why{margin:0}
+.why dt{font-family:var(--display);font-weight:700;font-size:1rem;margin-top:16px}
+.why dd{margin:2px 0 0;font-size:1.02rem}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;margin:0}
+.nums dt{font-family:var(--display);font-weight:700;font-size:1.55rem;letter-spacing:-.02em;line-height:1.1}
+.nums dd{margin:2px 0 0;font-size:.95rem;color:var(--moss);line-height:1.35}
+.also{display:grid;grid-template-columns:minmax(0,1.15fr) repeat(3,minmax(0,.65fr));gap:30px 40px;margin-top:72px;padding-top:48px;border-top:3px solid var(--pine);align-items:baseline}
+.also p{font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1.2;letter-spacing:-.01em;margin:0;grid-row:span 2}
+
+.todo{background:var(--signal);color:var(--pine);font-family:var(--display);font-size:.84em;font-weight:600;padding:1px 7px;border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.draft-note{font-family:var(--display);font-size:.95rem;margin-top:18px}
+
+/* people */
+.galv{background:var(--mist)}
+.galv .lede{margin-top:22px}
+.galv ol{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--pine)}
+.galv li{padding:24px 24px 0 0}
+.galv li+li{padding-left:24px;border-left:1px solid var(--rule)}
+.galv h3{font-size:1.3rem;margin-bottom:10px}
+.galv li p{font-size:1rem;margin:0 0 .6em}
+
+.opob{grid-template-columns:repeat(3,1fr);gap:28px 40px;margin:44px 0 0}
+.opob dt{font-size:clamp(2.6rem,5vw,3.8rem);font-weight:800;letter-spacing:-.035em;color:var(--pine)}
+.opob dd{font-size:1rem;color:var(--ink);max-width:22em}
+.galv ol{margin-top:36px}
+
+.src{font-family:var(--display);font-size:.9rem;color:var(--moss);margin:22px 0 0}
+.src a{text-underline-offset:3px}
+
+.aiop{background:var(--mist)}
+.aiop .lede{margin-top:22px}
+.aiop .steps{max-width:820px}
+.vom{background:var(--paper)}
+
+.earlier{margin:36px 0 0;max-width:46em;border-left:3px solid var(--signal);padding-left:16px;font-size:1.05rem}
+.earlier b{display:block;font-family:var(--display);font-weight:600}
+
+.opob-head{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:48px;align-items:center}
+.opob-logo{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:14px 18px;width:100%}
+
+.wheel-wrap{display:grid;grid-template-columns:minmax(0,1fr) 380px minmax(0,1fr);gap:56px;align-items:center;margin-top:52px}
+.wcol{display:flex;flex-direction:column;gap:64px}
+.wtxt{opacity:.38;transition:opacity .25s;cursor:pointer}
+.wtxt.on{opacity:1}
+.wtxt h3{font-size:1.6rem;margin-bottom:10px}
+.wtxt p{margin:0;font-size:1.02rem}
+.wheel{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px;aspect-ratio:1}
+.wq{appearance:none;border:0;cursor:pointer;background:var(--mist);color:var(--ink);font-family:var(--display);font-weight:700;font-size:1.25rem;transition:background .25s,color .25s}
+.wq[aria-pressed="true"]{background:var(--pine);color:var(--paper);box-shadow:inset 0 -6px 0 var(--signal)}
+.q-listen{grid-area:1/1;border-radius:100% 0 0 0;padding:26% 0 0 22%}
+.q-read{grid-area:1/2;border-radius:0 100% 0 0;padding:26% 22% 0 0}
+.q-report{grid-area:2/2;border-radius:0 0 100% 0;padding:0 22% 26% 0}
+.q-respond{grid-area:2/1;border-radius:0 0 0 100%;padding:0 0 26% 22%}
+.q-report[aria-pressed="true"],.q-respond[aria-pressed="true"]{box-shadow:inset 0 6px 0 var(--signal)}
+.whub{position:absolute;left:50%;top:50%;width:104px;height:104px;margin:-52px 0 0 -52px;border-radius:50%;background:var(--paper);display:grid;place-items:center;color:var(--pine);pointer-events:none}
+
+/* built */
+.built{background:var(--pine);color:var(--paper)}
+.built .lede{margin-top:22px;color:rgba(247,247,247,.86)}
+.shelf{display:grid;grid-template-columns:repeat(3,1fr);gap:0 44px;margin-top:28px}
+.item{padding:26px 0 34px;border-top:1px solid var(--rule-dark)}
+.tag{display:inline-block;font-family:var(--display);font-size:.8rem;font-weight:600;color:var(--signal);border:1px solid rgba(168,207,58,.55);border-radius:999px;padding:2px 11px;margin-bottom:16px}
+.item h3{font-size:1.4rem;line-height:1.15;margin-bottom:10px}
+.item p{margin:0;font-size:1rem;color:rgba(247,247,247,.82)}
+
+/* ai */
+.ai-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:64px}
+.ai h2{margin-bottom:24px}
+.steps{list-style:none;counter-reset:s;margin:32px 0 0;padding:0;border-top:1px solid var(--rule)}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.2rem 1fr;padding:18px 0;border-bottom:1px solid var(--rule)}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;color:var(--moss)}
+.steps strong{font-family:var(--display);font-weight:600;display:block}
+.steps span{font-size:1rem}
+.study{background:var(--mist);border-radius:10px;padding:30px 32px}
+.study h3{font-size:1.35rem;margin-bottom:10px}
+.study p{font-size:1rem}
+.study ul{list-style:none;margin:22px 0 0;padding:18px 0 0;border-top:1px solid var(--rule);font-size:.97rem}
+.study li{padding:5px 0}
+.study li b{font-family:var(--display);font-weight:600}
+
+/* point of view */
+.pov{background:var(--pine);color:var(--paper)}
+.pov-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.pov h2{font-size:clamp(2.2rem,5vw,3.9rem);font-weight:800;letter-spacing:-.03em}
+.pov p{font-size:1.2rem;line-height:1.6;color:rgba(247,247,247,.9)}
+.pov .punch{font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1.25;color:var(--paper);border-left:4px solid var(--signal);padding-left:16px;margin-top:1.4em}
+
+/* career timeline */
+.career h2{margin-bottom:10px}
+.tl{list-style:none;margin:48px 0 0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:14px;margin-left:-7px;background:var(--ink);border-radius:7px}
+.tl::after{content:"";position:absolute;left:50%;top:0;width:14px;margin-left:-7px;height:calc(var(--p,0)*100%);background:var(--signal);border-radius:7px}
+.stop{display:grid;grid-template-columns:minmax(0,1fr) 84px minmax(0,1fr);align-items:center;padding:20px 0}
+.stop .n{grid-column:2;grid-row:1;justify-self:center;width:46px;height:46px;border-radius:50%;background:var(--paper);border:5px solid var(--pine);display:grid;place-items:center;font-family:var(--display);font-weight:700;position:relative;z-index:1}
+.stop .when{grid-row:1;font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,3.2vw,2.5rem);letter-spacing:-.03em;color:var(--pine)}
+.stop .card{grid-row:1;background:var(--mist);border-radius:10px;padding:20px 24px;display:grid;grid-template-columns:132px minmax(0,1fr);gap:20px;align-items:center}
+.badge{width:132px;height:84px;border-radius:10px;background:#fff;border:1px solid var(--rule);display:grid;place-items:center;padding:10px}
+.badge img{max-width:100%;max-height:62px;width:auto;height:auto;object-fit:contain}
+.stop:nth-child(odd) .card{grid-column:1}
+.stop:nth-child(odd) .when{grid-column:3}
+.stop:nth-child(even) .card{grid-column:3}
+.stop:nth-child(even) .when{grid-column:1;text-align:right}
+.stop h3{font-size:1.25rem;line-height:1.2;margin-bottom:8px}
+.stop .org{font-family:var(--display);font-weight:500;color:var(--moss);margin:3px 0 8px}
+.stop .card div p:last-child{margin:0;font-size:1rem}
+.stop.now .n{background:var(--signal)}
+.stop.now .card{background:var(--pine);color:var(--paper)}
+.stop.now .org{color:rgba(247,247,247,.75)}
+
+/* contact */
+.contact{background:var(--pine);color:var(--paper)}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:64px;align-items:center}
+.contact h2{font-size:clamp(2.6rem,7vw,5rem);font-weight:800;letter-spacing:-.03em}
+.contact .lede{margin-top:22px;color:rgba(247,247,247,.86)}
+.reach{list-style:none;margin:34px 0 0;padding:0;font-family:var(--display);font-size:1.15rem}
+.reach li{padding:14px 0;border-top:1px solid var(--rule-dark);display:flex;gap:20px;flex-wrap:wrap}
+.reach li:last-child{border-bottom:1px solid var(--rule-dark)}
+.reach span{min-width:5.5rem;color:rgba(247,247,247,.65)}
+.reach a{text-decoration-color:var(--signal);text-underline-offset:5px}
+.contact img{border-radius:10px;aspect-ratio:4/5;object-fit:cover}
+footer{background:var(--pine);color:rgba(247,247,247,.6);font-family:var(--display);font-size:.9rem;padding:0 0 34px}
+footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
+
+@media (max-width:900px){
+  section{padding:68px 0}
+  .nav ul{display:none}
+  .hero-grid,.about-grid,.ai-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
+  .hero-copy{padding-bottom:0}
+  .hero-photo img{aspect-ratio:5/4;object-position:60% 12%}
+  .figures dl{grid-template-columns:1fr 1fr}
+  .figures dl div{padding:20px 16px 20px 0}
+  .figures dl div+div{padding-left:0;border-left:0}
+  .figures dl div:nth-child(even){padding-left:18px;border-left:1px solid var(--rule-dark)}
+  .figures dl div:nth-child(n+3){border-top:1px solid var(--rule-dark)}
+  .about-grid img{max-width:320px}
+  .modes{grid-template-columns:1fr}
+  .modes div+div{padding-left:0;border-left:0}
+  .proof{grid-template-columns:1fr}
+  .proof div+div{border-left:0;border-top:1px solid rgba(2,60,91,.28)}
+  .track{margin-top:36px}
+  .track::before,.tabs::before,.tabs::after{display:none}
+  .tabs{grid-template-columns:1fr 1fr;gap:22px 16px}
+  .tab .when{margin-top:8px}
+  .panel{grid-template-columns:1fr;gap:14px;padding:26px 24px;margin-top:28px}
+  .case{grid-template-columns:1fr;gap:20px;padding:36px 0}
+  .also{grid-template-columns:1fr 1fr;gap:22px;margin-top:48px;padding-top:36px}
+  .also p{grid-column:1/-1}
+  .model{grid-template-columns:1fr;gap:24px;margin-top:40px}
+  .creds{grid-template-columns:1fr}
+  .cred,.cred+.cred{padding:20px 0 6px;border-left:0;margin-top:14px}
+  .galv ol{grid-template-columns:1fr}
+  .galv li,.galv li+li{padding:22px 0 0;border-left:0}
+  .shelf{grid-template-columns:1fr}
+  .pov-grid{grid-template-columns:1fr;gap:28px}
+  .tl::before,.tl::after{left:23px;margin-left:-7px}
+  .subnav .who{display:none}
+  .subnav .wrap{gap:14px}
+  .rtabs{grid-template-columns:1fr 1fr}
+  .rtab{padding:16px 12px 16px 0}
+  .stop{grid-template-columns:46px minmax(0,1fr);column-gap:18px;align-items:start;padding:16px 0}
+  .stop .n{grid-column:1;grid-row:1 / span 2;justify-self:start}
+  .stop .when,.stop:nth-child(odd) .when,.stop:nth-child(even) .when{grid-column:2;grid-row:1;text-align:left;margin-bottom:8px}
+  .stop .card,.stop:nth-child(odd) .card,.stop:nth-child(even) .card{grid-column:2;grid-row:2}
+  .stop .card{grid-template-columns:1fr;gap:12px}
+  .badge{justify-self:start}
+  .contact img{max-width:300px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none;transition:none}.tl::after{height:100%}}
+
+/* choose-what-to-see chips, and one-at-a-time tabs on phones */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+.chips button{appearance:none;background:none;color:inherit;border:1.5px solid var(--rule-dark);border-radius:999px;padding:9px 18px;font-family:var(--display);font-weight:600;font-size:.98rem;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--signal);border-color:var(--signal);color:var(--pine)}
+.mt-nav,.swipe{display:none}
+@media (max-width:900px){
+  section{padding:56px 0}
+  .mt-nav{display:flex;gap:26px;margin-top:30px;border-bottom:1px solid var(--line,rgba(127,140,150,.45));overflow-x:auto;scrollbar-width:none}
+  .mt-nav::-webkit-scrollbar{display:none}
+  .mt-nav button{appearance:none;background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;padding:10px 0 12px;color:inherit;opacity:.6;font-family:var(--display);font-weight:600;font-size:1.08rem;white-space:nowrap;cursor:pointer}
+  .mt-nav button[aria-pressed="true"]{opacity:1;border-bottom-color:var(--signal)}
+  .mtabs>.mt-item:not(.on){display:none}
+  .creds,.galv ol{margin-top:0;border-top:0}
+  .opob{grid-template-columns:1fr;gap:18px;margin-top:30px}
+  .wheel-wrap{grid-template-columns:1fr;gap:26px;margin-top:32px}
+  .wheel{order:-1;width:min(300px,100%);margin:0 auto}
+  .wq{font-size:1.05rem}
+  .whub{width:80px;height:80px;margin:-40px 0 0 -40px}
+  .wcol{display:contents}
+  .wtxt:not(.on){display:none}
+  .opob-head{grid-template-columns:1fr;gap:22px}
+  .opob-logo{max-width:300px}
+  .cred,.cred+.cred,.cred.next{border-top:0;margin-top:0;padding:24px 0 0}
+  .galv li,.galv li+li{padding:24px 0 0}
+  .mtabs>.model{margin-top:0;border-top:0;padding-top:26px}
+  .swipe{display:block;font-family:var(--display);font-size:.92rem;color:var(--moss);margin:14px 0 0}
+  .tl{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin:18px -28px 0;padding:0 28px 14px;scrollbar-width:none}
+  .tl::-webkit-scrollbar{display:none}
+  .tl::before,.tl::after{display:none}
+  .stop{display:block;flex:0 0 84%;scroll-snap-align:center;padding:0}
+  .stop .n{display:none}
+  .stop .when{margin:0 0 10px}
+  .stop .card{min-height:calc(100% - 3.2rem)}
+  .about-grid img{max-width:240px}
+  .panel{margin-top:22px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="name" href="#top">Braxton Tarver</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#models">Credentials</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1><span>I architect growth.</span><span>I mobilize people.</span></h1>
+        <p class="lede">A member sees one relationship. The business sees teams, systems, and handoffs. My work is to close that gap.</p>
+        <div class="cta">
+          <a class="btn btn-solid" href="#results">See the results</a>
+          <a class="btn btn-line" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/stage.jpg" alt="Braxton Tarver seated on stage in front of a screen that reads: Better outcomes begin with better questions." width="1100" height="1375">
+      </figure>
+    </div>
+  </div>
+  <div class="figures">
+    <div class="wrap">
+      <dl>
+        <div><dt>$35M</dt><dd>P&amp;L responsibility</dd></div>
+        <div><dt>~700,000</dt><dd>active members served</dd></div>
+        <div><dt>$42M</dt><dd>administrative savings</dd></div>
+        <div><dt>15+ years</dt><dd>leading transformation</dd></div>
+      </dl>
+    </div>
+  </div>
+</header>
+
+<nav class="subnav" aria-label="Sections">
+  <div class="wrap">
+    <a class="who" href="#top">Braxton Tarver</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#moments">How I think</a></li>
+      <li><a href="#models">Credentials</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#ai">AI</a></li>
+      <li><a href="#voice">Voice</a></li>
+      <li><a href="#people">People</a></li>
+      <li><a href="#career">Career</a></li>
+    </ul>
+    <a class="go" href="#contact">Get in touch</a>
+  </div>
+</nav>
+
+<main>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <img src="img/portrait-office.jpg" alt="Braxton Tarver seated in his office in a shirt, tie, and suspenders" width="1100" height="1100" loading="lazy">
+    <div>
+      <h2>How I lead</h2>
+      <p class="lede">My work combines operating design with leading people through change.</p>
+      <p>I have worked on both ends of a health plan purchase. Nine years at a carrier, Blue Shield of California, building products and researching the people who buy them. Since 2023 at a marketplace, eHealth, where I lead member loyalty and retention with scope across sales, enrollment, employer and ICHRA account management, and chat.</p>
+      <p>At Blue Shield I worked directly with CAHPS, Stars, and grievance measures. At eHealth, I study why members stay with us or go elsewhere. I use what we learn to recommend investments to the CEO and executive team.</p>
+      <p>I am also usually the one who walks in with something I just read from another industry and asks why we couldn't do that here.</p>
+      <div class="modes">
+        <div>
+          <h3>I architect</h3>
+          <p>I turn a messy problem into a service blueprint, an operating model, and a plan with owners and measures.</p>
+        </div>
+        <div>
+          <h3>I mobilize</h3>
+          <p>I help people understand the plan, what it asks of them, and why their work matters.</p>
+        </div>
+      </div>
+      <dl class="proof">
+        <div><dt>100 of 100</dt><dd>on the Great Place to Work manager quality index at Blue Shield of California, 2017&nbsp;to&nbsp;2023</dd></div>
+        <div><dt>+9 points</dt><dd>in my team's engagement score at eHealth, from 75 in 2024 to 84 in 2025 and 2026</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="moments" id="moments">
+  <div class="wrap">
+    <h2>The moments that decide a member relationship</h2>
+    <p class="lede">Choosing a plan, using it for the first time, getting help when something goes wrong, and deciding whether to stay shape the member relationship. I design the work around those moments, assign ownership, and measure the outcome. My tools are a journey map for the member's side and a service blueprint for the work behind it.</p>
+
+    <div class="track">
+      <div class="tabs" role="tablist" aria-label="Four moments">
+        <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">
+          <span class="dot"></span><span class="when">Before enrolling</span><span class="what">The promise</span>
+        </button>
+        <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">
+          <span class="dot"></span><span class="when">First 90 days</span><span class="what">The start</span>
+        </button>
+        <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">
+          <span class="dot"></span><span class="when">When something breaks</span><span class="what">The recovery</span>
+        </button>
+        <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1">
+          <span class="dot"></span><span class="when">Every fall</span><span class="what">The renewal</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+      <h3>Does this plan fit this person's doctors, prescriptions, and life?</h3>
+      <p>Every later moment is judged against what was promised here. I study which sales and enrollment behaviors go with members who stay, then build coaching and verification around those behaviors instead of around scripts.</p>
+    </div>
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+      <h3>What happens the first time they use the plan?</h3>
+      <p>The first doctor visit and the first prescription are where a good enrollment gets confirmed or lost. I design the handoff from sale to service, with planned follow-up at 30, 60, and 90 days so problems surface while there is still time to fix them.</p>
+    </div>
+    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+      <h3>When a problem crosses teams, who gets back to the member?</h3>
+      <p>Whether it's a stalled application, a billing error, or a complaint, I assign someone to follow up, set a deadline, and check that the issue was resolved. In 2025, our enrollment recovery work protected $11.3M in application value.</p>
+    </div>
+    <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+      <h3>What do we do when the plan itself changes?</h3>
+      <p>In 2025, my team reached 144,000 members whose coverage was at risk. More than 23,000 changed plans and stayed with eHealth.</p>
+    </div>
+  </div>
+</section>
+
+<section class="models" id="models">
+  <div class="wrap">
+    <div class="models-head">
+      <h2>The training behind my approach</h2>
+      <button class="pause" type="button" id="pause" aria-pressed="false">Pause motion</button>
+    </div>
+    <p class="lede">My training spans design thinking, Lean Six Sigma, and agile. I draw on each to understand the problem, improve the process, and put changes into practice.</p>
+
+    <ol class="creds mtabs">
+      <li data-label="Design" class="mt-item cred">
+        <p class="stage">Design thinking</p>
+        <h3>Advanced Design Thinking Certification</h3>
+        <p class="by">IDEO</p>
+        <p>Finding the right problem before anyone builds.</p>
+      </li>
+      <li data-label="Lean" class="mt-item cred">
+        <p class="stage">Lean</p>
+        <h3>Lean Six Sigma Master Black Belt</h3>
+        <p class="by">Villanova University</p>
+        <p>Finding root causes, reducing variation, and improving performance.</p>
+      </li>
+      <li data-label="Agile" class="mt-item cred">
+        <p class="stage">Agile</p>
+        <h3>Certified SAFe Agile Architect and Scrum Master</h3>
+        <p class="by">Scaled Agile, Inc.</p>
+        <p>Shipping in increments and learning from each one.</p>
+      </li>
+      <li data-label="AI" class="mt-item cred next">
+        <p class="stage">AI</p>
+        <h3>Advanced Certificate for Executives in AI and Digital Business</h3>
+        <p class="by">MIT Sloan Executive Education, in progress</p>
+        <p>AI Executive Academy in January 2027 and Business Dynamics in June 2027.</p>
+      </li>
+    </ol>
+
+    <div class="mtabs">
+    <div class="mt-item model" data-label="The path">
+      <div>
+        <h3>How the three connect</h3>
+        <p>I use design thinking to understand the problem, Lean to test and improve the process, and agile to deliver in increments. What we learn can send us back to an earlier decision.</p>
+        <p class="practice"><b>In practice</b>At Blue Shield of California I set up stage-gate evaluation to prioritize the strongest product concepts and get validated ones to market faster.</p>
+      </div>
+      <div class="fig" tabindex="0" role="group" aria-label="Product development framework diagram, scrollable">
+        <svg viewBox="0 0 770 345" role="img" aria-label="A path rises from concrete to abstract through empathize, define, and ideate, then runs around a lean loop of build, measure, learn, then an agile loop of backlog, sprint, review, and shippable increment.">
+          <line class="thin" x1="44" y1="150" x2="760" y2="150"/>
+          <line class="thin" x1="44" y1="24" x2="44" y2="276"/>
+          <text class="sm" x="0" y="40">Abstract</text><text class="sm" x="0" y="270">Concrete</text>
+          <path class="ln" d="M62,252 C112,242 122,92 202,62 C252,45 262,110 270,150"/>
+          <circle class="ln" cx="390" cy="150" r="120"/>
+          <circle class="ln" cx="630" cy="150" r="120"/>
+          <circle class="node" cx="62" cy="252" r="7"/><circle class="node" cx="124" cy="165" r="7"/><circle class="node" cx="202" cy="62" r="7"/><circle class="node" cx="270" cy="150" r="7"/><circle class="node" cx="510" cy="150" r="7"/>
+          <text x="78" y="262">Empathize</text><text x="140" y="172">Define</text><text x="180" y="42">Ideate</text>
+          <text class="b" x="390" y="66" text-anchor="middle">Learn</text>
+          <text x="390" y="146" text-anchor="middle">Try experiments</text><text class="sm" x="390" y="168" text-anchor="middle">Pivot or persevere</text>
+          <text class="b" x="390" y="248" text-anchor="middle">Measure</text>
+          <text class="b" x="630" y="66" text-anchor="middle">Learn</text>
+          <text class="sm" x="578" y="118" text-anchor="middle">Product</text><text class="sm" x="578" y="136" text-anchor="middle">backlog</text>
+          <text class="sm" x="684" y="118" text-anchor="middle">Sprint</text><text class="sm" x="684" y="136" text-anchor="middle">execution</text>
+          <text class="sm" x="578" y="186" text-anchor="middle">Sprint</text><text class="sm" x="578" y="204" text-anchor="middle">review</text>
+          <text class="sm" x="684" y="186" text-anchor="middle">Shippable</text><text class="sm" x="684" y="204" text-anchor="middle">increment</text>
+          <rect class="bar" x="62" y="296" width="204" height="4"/><rect class="bar" x="274" y="296" width="232" height="4" opacity=".7"/><rect class="bar" x="514" y="296" width="236" height="4" opacity=".45"/>
+          <text class="b" x="62" y="326">Design thinking</text><text class="b" x="274" y="326">Lean</text><text class="b" x="514" y="326">Agile</text>
+          
+          <circle class="dot" r="9">
+            <animateMotion dur="16s" repeatCount="indefinite" path="M62,252 C112,242 122,92 202,62 C252,45 262,110 270,150 A120,120 0 0 1 510,150 A120,120 0 0 1 270,150 A120,120 0 0 1 510,150 A120,120 0 0 1 750,150 A120,120 0 0 1 510,150"/>
+          </circle>
+        </svg>
+      </div>
+    </div>
+
+    <div class="mt-item model" data-label="Double diamond">
+      <div>
+        <h3>The same path, as a double diamond</h3>
+        <p>Open up to understand the problem, then narrow to a focus. Open up again on solutions, then narrow to what ships. After launch, measure, listen, and go around again.</p>
+        <p>Keep the scope manageable. Prioritize changes that matter and can be delivered. Use evidence to decide what comes next.</p>
+        <p class="practice"><b>In practice</b>Product positioning and benefit design at Blue Shield of California were built on market research and conjoint analysis.</p>
+      </div>
+      <div class="fig" tabindex="0" role="group" aria-label="Double diamond diagram, scrollable">
+        <svg viewBox="0 0 770 345" role="img" aria-label="Two diamonds in a row. Each has arrows that spread apart for divergent thinking and come together for convergent thinking. The first widens through discover and narrows through define. The second widens through develop and narrows through deliver, ending at launch, with a loop back to the start labeled evolve and iterate.">
+          <path class="thin" d="M690,150 C690,-6 52,-6 52,128"/>
+          <path class="ln" d="M44,118 L52,132 L61,119" style="stroke-width:2"/>
+          <text class="sm" x="371" y="24" text-anchor="middle">Evolve and iterate</text>
+          <line class="thin" x1="20" y1="150" x2="760" y2="150"/>
+          <defs><marker id="arw" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto"><path d="M2,1 L10,6 L2,11" fill="none" stroke="#f7f7f7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+          <polygon class="fillonly" points="90,150 210,54 330,150 210,246"/>
+          <line class="ln" x1="90" y1="150" x2="203" y2="59.6" marker-end="url(#arw)"/>
+          <line class="ln" x1="90" y1="150" x2="203" y2="240.4" marker-end="url(#arw)"/>
+          <line class="ln" x1="217" y1="59.6" x2="321" y2="142.8" marker-end="url(#arw)"/>
+          <line class="ln" x1="217" y1="240.4" x2="321" y2="157.2" marker-end="url(#arw)"/>
+          <text class="mode" x="166" y="140" text-anchor="middle">Divergent</text><text class="mode" x="166" y="170" text-anchor="middle">thinking</text>
+          <text class="mode" x="256" y="140" text-anchor="middle">Convergent</text><text class="mode" x="256" y="170" text-anchor="middle">thinking</text>
+          <polygon class="fillonly" points="330,150 450,54 570,150 450,246"/>
+          <line class="ln" x1="330" y1="150" x2="443" y2="59.6" marker-end="url(#arw)"/>
+          <line class="ln" x1="330" y1="150" x2="443" y2="240.4" marker-end="url(#arw)"/>
+          <line class="ln" x1="457" y1="59.6" x2="561" y2="142.8" marker-end="url(#arw)"/>
+          <line class="ln" x1="457" y1="240.4" x2="561" y2="157.2" marker-end="url(#arw)"/>
+          <text class="mode" x="406" y="140" text-anchor="middle">Divergent</text><text class="mode" x="406" y="170" text-anchor="middle">thinking</text>
+          <text class="mode" x="496" y="140" text-anchor="middle">Convergent</text><text class="mode" x="496" y="170" text-anchor="middle">thinking</text>
+          <circle class="node" cx="90" cy="150" r="7"/><circle class="node" cx="330" cy="150" r="7"/><circle class="node" cx="570" cy="150" r="7"/><circle class="node" cx="690" cy="150" r="7"/>
+          <text class="sm" x="20" y="182">Challenge</text><text class="sm" x="330" y="182" text-anchor="middle">Focus</text><text class="sm" x="690" y="182" text-anchor="middle">Launch</text>
+          <text class="b" x="150" y="290" text-anchor="middle">Discover</text><text class="sm" x="150" y="312" text-anchor="middle">Research</text>
+          <text class="b" x="270" y="290" text-anchor="middle">Define</text><text class="sm" x="270" y="312" text-anchor="middle">Scope</text>
+          <text class="b" x="390" y="290" text-anchor="middle">Develop</text><text class="sm" x="390" y="312" text-anchor="middle">Test</text>
+          <text class="b" x="510" y="290" text-anchor="middle">Deliver</text><text class="sm" x="510" y="312" text-anchor="middle">Measure</text>
+          <text class="b" x="650" y="290" text-anchor="middle">Evolve</text><text class="sm" x="650" y="312" text-anchor="middle">Listen</text>
+          <line class="sweep" x1="90" x2="90" y1="150" y2="150">
+            <animate attributeName="x1" dur="12s" repeatCount="indefinite" values="90;210;330;450;570;690;690" keyTimes="0;.18;.36;.54;.72;.9;1"/>
+            <animate attributeName="x2" dur="12s" repeatCount="indefinite" values="90;210;330;450;570;690;690" keyTimes="0;.18;.36;.54;.72;.9;1"/>
+            <animate attributeName="y1" dur="12s" repeatCount="indefinite" values="150;54;150;54;150;150;150" keyTimes="0;.18;.36;.54;.72;.9;1"/>
+            <animate attributeName="y2" dur="12s" repeatCount="indefinite" values="150;246;150;246;150;150;150" keyTimes="0;.18;.36;.54;.72;.9;1"/>
+          </line>
+        </svg>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="results" id="results">
+  <div class="wrap">
+    <h2>Selected results</h2>
+    
+    <div class="rtabs" role="tablist" aria-label="Selected results">
+      <button class="rtab" role="tab" id="r4" aria-controls="c4" aria-selected="true"><b>$2.63M</b><span>favorable to plan</span><small>Transformation, 2025</small></button>
+      <button class="rtab" role="tab" id="r2" aria-controls="c2" aria-selected="false" tabindex="-1"><b>$42M</b><span>administrative cost savings</span><small>Operating model, 2018</small></button>
+      <button class="rtab" role="tab" id="r3" aria-controls="c3" aria-selected="false" tabindex="-1"><b>$11.3M</b><span>application value protected</span><small>Enrollment and recovery, 2025</small></button>
+      <button class="rtab" role="tab" id="r1" aria-controls="c1" aria-selected="false" tabindex="-1"><b>$18.4M</b><span>revenue retained</span><small>Member engagement, 2025</small></button>
+    </div>
+
+    <article class="case" role="tabpanel" id="c1" aria-labelledby="r1" hidden>
+      <div>
+        <p class="kicker"><img src="img/logo-ehealth.png" alt="eHealth"><span>Member engagement, 2025</span></p>
+        <dl class="nums"><div><dt>144,000</dt><dd>members reached</dd></div><div><dt>23,000+</dt><dd>members who changed plans and stayed with eHealth</dd></div></dl>
+      </div>
+      <div>
+        <h3>When members needed a new plan, would they choose eHealth again?</h3>
+        <dl class="why">
+          <dt>What I did</dt><dd>In 2025 my team proactively reached 144,000 members whose coverage was at risk, through Operation Protect Our Book.</dd>
+          <dt>Why it matters</dt><dd>The program retained $18.4M in revenue in 2025.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="case" role="tabpanel" id="c2" aria-labelledby="r2" hidden>
+      <div>
+        <p class="kicker"><img src="img/logo-bsc.png" alt="Blue Shield of California"><span>Product and operations, 2018</span></p>
+        <dl class="nums"><div><dt>+34%</dt><dd>online enrollment</dd></div><div><dt>+21%</dt><dd>above enrollment targets</dd></div><div><dt>30+</dt><dd>regulatory filings, zero compliance errors</dd></div><div><dt>$9.5M</dt><dd>saved each year on regulated communications<span class="per">Starting 2018</span></dd></div><div><dt>6M</dt><dd>lives in the market share I contributed to by my departure</dd></div></dl>
+      </div>
+      <div>
+        <h3>Where does administrative cost come from, and what would members rather do themselves?</h3>
+        <dl class="why">
+          <dt>What I did</dt><dd>Redesigned the operating model across product, research, operations, and digital self-service. Stage-gate evaluation and customer research decided which concepts earned investment, and I built the customer personas and journey maps that guided product and marketing decisions.</dd>
+          <dt>Why it matters</dt><dd>Lower administrative cost and a better member experience came out of the same redesign: $42M saved while online enrollment rose 34%, through 30+ regulatory filings with zero compliance errors.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="case" role="tabpanel" id="c3" aria-labelledby="r3" hidden>
+      <div>
+        <p class="kicker"><img src="img/logo-ehealth.png" alt="eHealth"><span>Enrollment and service recovery, 2025</span></p>
+        <dl class="nums"><div><dt>93.8%</dt><dd>sent-to-approved rate, up from 92.1%<span class="per">2025</span></dd></div><div><dt>11.7%</dt><dd>early cancellation rate, a 10-year best<span class="per">2025</span></dd></div><div><dt>5.7%</dt><dd>declined or withdrawn, a 9-year best<span class="per">2025</span></dd></div><div><dt>18,340</dt><dd>applications saved<span class="per">2025</span></dd></div></dl>
+      </div>
+      <div>
+        <h3>What happens to an application after the sale?</h3>
+        <dl class="why">
+          <dt>What I did</dt><dd>Mapped the path from submitted application to approved member, gave every step an owner across internal teams and carriers, and built recovery into the process.</dd>
+          <dt>Why it matters</dt><dd>The friction sat in the handoffs, where no single team owned the follow-up. Closing them produced a 93.8% approval rate, a ten-year best early cancellation rate, and $11.3M in application value protected in 2025.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="case" role="tabpanel" id="c4" aria-labelledby="r4">
+      <div>
+        <p class="kicker"><img src="img/logo-ehealth.png" alt="eHealth"><span>Transformation at scale, 2025</span></p>
+        <dl class="nums"><div><dt>$1.2M</dt><dd>structural savings<span class="per">2025</span></dd></div><div><dt>400</dt><dd>seasonal advocates mobilized</dd></div><div><dt>20</dt><dd>supervisors mobilized</dd></div><div><dt>$600K</dt><dd>saved on seasonal staffing while beating prior-year enrollment<span class="per">2025</span></dd></div></dl>
+      </div>
+      <div>
+        <h3>Can you rebuild the operating model without the operation slowing down?</h3>
+        <dl class="why">
+          <dt>What I did</dt><dd>I changed how we worked with vendors and moved part of the work back to the U.S. We staffed the enrollment season with 400 advocates and 20 supervisors.</dd>
+          <dt>Why it matters</dt><dd>We maintained service throughout the transition. In 2025 the organization finished $2.63M favorable to plan and delivered $1.2M in structural savings, with enrollment above the prior year.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <dl class="nums also">
+      <p><img class="chip" src="img/logo-ehealth.png" alt="eHealth">Cross-sell and employer group results, 2025</p>
+      <div><dt>149%</dt><dd>of Major Medical application goal, 4,479 against 3,000</dd></div>
+      <div><dt>146%</dt><dd>of Hospital Indemnity application goal, 2,333 against 1,600</dd></div>
+      <div><dt>424%</dt><dd>year-over-year growth in Hospital Indemnity applications</dd></div>
+      <div><dt>94.5%</dt><dd>health risk assessment attach rate, against a 90% goal</dd></div>
+      <div><dt>~3,200</dt><dd>net-new IFP members through ICHRA</dd></div>
+      <div><dt>94%</dt><dd>ICHRA retention</dd></div>
+    </dl>
+    <p class="src">eHealth figures cover completed periods, none later than the third quarter of 2026. Nothing on this page is a forecast.</p>
+  </div>
+</section>
+
+<section class="aiop" id="ai">
+  <div class="wrap">
+    <h2>AI in the operation</h2>
+    <p class="lede">In 2025 I introduced an AI agent into customer service. It answers first, handles the routine questions, and hands everything else to a person with the context attached.</p>
+    <dl class="nums opob">
+      <div><dt>1 second</dt><dd>average wait when the agent answered in 2025, against minutes in a human queue</dd></div>
+      <div><dt>40,000+</dt><dd>customer service calls the agent answered in 2025</dd></div>
+      <div><dt>77%</dt><dd>of callers rated the experience exceptional, as eHealth has reported publicly</dd></div>
+    </dl>
+    <p class="src">Satisfaction figure: <a href="https://news.ehealthinsurance.com/news/ehealth-advances-its-ai-strategy-with-expanded-voice-agent-capabilities">eHealth announcement, November 2025</a>.</p>
+    <ol class="steps">
+      <li><div><strong>Start with the member problem</strong><span>People were waiting on hold to ask where their application stood, when their ID card would arrive, or who to call about a bill. Those became the agent's first jobs.</span></div></li>
+      <li><div><strong>Keep a person accountable</strong><span>Most calls still reach a human, by design. The agent takes what it can finish and routes the rest, with privacy and compliance in the room from the start.</span></div></li>
+      <li><div><strong>Scale what improves</strong><span>Before we give the voice agent another kind of call, I want to know whether members get the help they need the first time or have to call back about the same issue.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="galv vom" id="voice">
+  <div class="wrap">
+    <h2>Voice of the member, built from scratch</h2>
+    <p class="lede">I established eHealth's NPS program and the reporting that turns member feedback into action. Findings go to the teams responsible for improvements, and we follow up with members.</p>
+    <div class="wheel-wrap">
+      <div class="wcol">
+        <div class="wtxt" data-k="Listen" id="w-Listen"><h3>Listen</h3><p>Three sources in one view: the NPS program, public reviews, and what members post unprompted on social and review sites.</p></div>
+        <div class="wtxt" data-k="Respond" id="w-Respond"><h3>Respond</h3><p>I designed a service recovery function, so a member who reports a problem gets one owner and a resolution. I also answer public reviews myself, under my own name.</p></div>
+      </div>
+      <div class="wheel" role="group" aria-label="The feedback loop">
+        <button type="button" class="wq q-listen" data-k="Listen" aria-controls="w-Listen" aria-pressed="false">Listen</button>
+        <button type="button" class="wq q-read" data-k="Read" aria-controls="w-Read" aria-pressed="false">Read</button>
+        <button type="button" class="wq q-report" data-k="Report" aria-controls="w-Report" aria-pressed="false">Report</button>
+        <button type="button" class="wq q-respond" data-k="Respond" aria-controls="w-Respond" aria-pressed="false">Respond</button>
+        <span class="whub" aria-hidden="true"><svg viewBox="0 0 48 48" width="44" height="44"><path d="M37 24a13 13 0 1 1-4.2-9.6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M34 6v9h-9" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      <div class="wcol">
+        <div class="wtxt" data-k="Read" id="w-Read"><h3>Read</h3><p>Every unhappy review and every detractor comment gets read and assigned one main reason. Scores say how members feel. Reasons say what to fix.</p></div>
+        <div class="wtxt" data-k="Report" id="w-Report"><h3>Report</h3><p>The executive team gets a mid-season report while there is still time to act. It shows what changed against last year, the main reasons behind unhappy feedback, and what to watch before the season ends. Each finding goes to the team that owns the fix.</p></div>
+      </div>
+    </div>
+    <p class="earlier"><b>Earlier, at Blue Shield of California</b>I raised NPS by 10 points between 2022 and 2023 with an education campaign. We used every channel to teach members the eight basic benefits already included in their plan. The research team I led also used voice-of-customer insight to beat engagement benchmarks by 41% to 89%.</p>
+  </div>
+</section>
+
+<section class="galv" id="people">
+  <div class="wrap">
+    <div class="opob-head">
+      <div>
+    <h2>Mobilizing people, in practice</h2>
+    <p class="lede">A member can be happy with their Medicare Advantage plan and still get a letter saying it will end. I built Operation Protect Our Book so our advocates could help those members choose coverage for the coming year.</p>
+      </div>
+      <img class="opob-logo" src="img/logo-opob.png" alt="Operation Protect Our Book logo" width="900" height="420">
+    </div>
+    <dl class="nums opob">
+      <div><dt>1%</dt><dd>of Medicare Advantage enrollees were forced out of their plan in a typical year, 2018 through 2024</dd></div>
+      <div><dt>10%</dt><dd>were forced out heading into 2026, as insurers left markets</dd></div>
+      <div><dt>2.8M</dt><dd>people are in individual Medicare Advantage drug plans that end on December 31, 2026. Two years earlier it was 1.3 million</dd></div>
+    </dl>
+    <p class="src">Industry figures: <a href="https://www.healthcaredive.com/news/medicare-advantage-forced-disenrollments-insurers-exit-markets-jama/813025/">research published in JAMA, February 2026</a>, and <a href="https://www.kff.org/medicare/more-than-4-million-medicare-beneficiaries-will-have-their-medicare-advantage-or-stand-alone-prescription-drug-plan-terminated-at-the-end-of-2026/">KFF analysis of CMS data, October 2026</a>.</p>
+    <ol class="mtabs">
+      <li class="mt-item" data-label="Moment"><h3>The moment</h3><p>A termination notice turns a settled member into a shopper overnight. They did nothing wrong, and now they have a deadline. How they are treated in those weeks decides whether they stay.</p></li>
+      <li class="mt-item" data-label="Rally"><h3>The rally</h3><p>I named the effort Operation Protect Our Book and used the kickoff to make the responsibility clear: help affected members understand their options and take action before their coverage ended.</p></li>
+      <li class="mt-item" data-label="Work"><h3>The work</h3><p>We built the muscle early: identify the members whose plans are ending, be ready when they call, and help each one into a plan that fits. I led the end-to-end design, which touched more than ten teams and passed through six phase gates.</p></li>
+      <li class="mt-item" data-label="Result"><h3>The result</h3><p>As the number of affected members grew, the share who cancelled and left fell year over year.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="career" id="career">
+  <div class="wrap">
+    <h2>Professional experience</h2>
+    <p class="swipe">Swipe through the timeline</p>
+    <ol class="tl">
+      <li class="stop">
+        <span class="n" aria-hidden="true">1</span>
+        <p class="when">2011 to 2013</p>
+        <div class="card"><span class="badge"><img src="img/logo-hpe.png" alt="Hewlett Packard Enterprise"></span><div><h3>Regional Director</h3><p>Digitized records across 11 California state prisons, on time and on budget. Paper-based processes fell 75%, with average savings of $1.2M per site.</p></div></div>
+      </li>
+      <li class="stop">
+        <span class="n" aria-hidden="true">2</span>
+        <p class="when">2013 to 2014</p>
+        <div class="card"><span class="badge"><img src="img/logo-sdi.svg" alt="SDI Presence"></span><div><h3>Business Process Management Director</h3><p class="org">Formerly NexLevel IT</p><p>Implemented two scheduling systems between systems groups and more than 500 end users. Productivity rose 30%.</p></div></div>
+      </li>
+      <li class="stop">
+        <span class="n" aria-hidden="true">3</span>
+        <p class="when">2014 to 2016</p>
+        <div class="card"><span class="badge"><img src="img/logo-bsc.png" alt="Blue Shield of California"></span><div><h3>Senior Manager, Product Operations and Marketing</h3><p>Process optimization, strategic coordination, and execution.</p></div></div>
+      </li>
+      <li class="stop">
+        <span class="n" aria-hidden="true">4</span>
+        <p class="when">2016 to 2018</p>
+        <div class="card"><span class="badge"><img src="img/logo-bsc.png" alt="Blue Shield of California"></span><div><h3>Senior Manager, Product Development Lifecycle</h3><p>Product management, operational excellence, and business strategy.</p></div></div>
+      </li>
+      <li class="stop">
+        <span class="n" aria-hidden="true">5</span>
+        <p class="when">2018</p>
+        <div class="card"><span class="badge"><img src="img/logo-bsc.png" alt="Blue Shield of California"></span><div><h3>Product Transformation Driver</h3><p class="org">One-year special assignment</p><p>Business transformation, change management, process optimization, and data analysis.</p></div></div>
+      </li>
+      <li class="stop">
+        <span class="n" aria-hidden="true">6</span>
+        <p class="when">2018 to 2023</p>
+        <div class="card"><span class="badge"><img src="img/logo-bsc.png" alt="Blue Shield of California"></span><div><h3>Senior Manager, Product Marketing, Insights and Research</h3><p>Customer insights and growth and retention strategy. Across nine years there: $42M in administrative savings, online enrollment up 34%, and 30+ regulatory filings with zero compliance errors.</p></div></div>
+      </li>
+      <li class="stop now">
+        <span class="n" aria-hidden="true">7</span>
+        <p class="when">2023 to present</p>
+        <div class="card"><span class="badge"><img src="img/logo-ehealth.png" alt="eHealth"></span><div><h3>Senior Director, Member Loyalty and Retention</h3><p>Scope across sales, retention, enrollment, employer and ICHRA account management, chat, and strategy. Accountable for a $35M organization.</p></div></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Let's compare notes.</h2>
+      <p class="lede">On member experience, operating design, and the work of making change stick.</p>
+      <ul class="reach">
+        <li><span>Email</span><a href="mailto:Btarver8@gmail.com">Btarver8@gmail.com</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/braxtontarver/">linkedin.com/in/braxtontarver</a></li>
+        <li><span>Summary</span><a href="Braxton-Tarver-Summary.pdf">Download the one-page summary (PDF)</a></li>
+      </ul>
+    </div>
+    <img src="img/portrait-bw.jpg" alt="Black and white portrait of Braxton Tarver" width="1100" height="1375" loading="lazy">
+  </div>
+</section>
+<footer><div class="wrap">© 2026 Braxton Tarver</div></footer>
+
+<script>
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $=function(q,r){return [].slice.call((r||document).querySelectorAll(q));};
+
+  /* count up a number in place, keeping its prefix, suffix and formatting */
+  function count(el){
+    if(reduce||el.dataset.done)return; el.dataset.done=1;
+    var full=el.textContent,m=full.match(/[\d,]*\.?\d+/); if(!m)return;
+    var raw=m[0],end=parseFloat(raw.replace(/,/g,'')),dec=(raw.split('.')[1]||'').length,comma=raw.indexOf(',')>-1;
+    var pre=full.slice(0,m.index),post=full.slice(m.index+raw.length),t0=null,dur=1100;
+    function fmt(v){var x=v.toFixed(dec);return comma?x.replace(/\B(?=(\d{3})+(?!\d))/g,','):x;}
+    function step(t){
+      if(!t0)t0=t; var k=Math.min((t-t0)/dur,1),e=1-Math.pow(1-k,3);
+      el.textContent=pre+fmt(end*e)+post;
+      if(k<1)requestAnimationFrame(step); else el.textContent=full;
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* tabs: the four moments, and the results gallery */
+  $('[role="tablist"]').forEach(function(list){
+    var tabs=$('[role="tab"]',list);
+    function pick(t,focus){
+      tabs.forEach(function(x){
+        var on=x===t,panel=document.getElementById(x.getAttribute('aria-controls'));
+        x.setAttribute('aria-selected',on?'true':'false'); x.tabIndex=on?0:-1; panel.hidden=!on;
+        if(on)$('.nums dt',panel).forEach(count);
+      });
+      if(focus)t.focus();
+    }
+    tabs.forEach(function(t,i){
+      t.addEventListener('click',function(){pick(t);});
+      t.addEventListener('keydown',function(e){
+        if(e.key==='ArrowRight'||e.key==='ArrowDown'){e.preventDefault();pick(tabs[(i+1)%tabs.length],true);}
+        if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();pick(tabs[(i+tabs.length-1)%tabs.length],true);}
+      });
+    });
+  });
+
+  /* pause control for the two model diagrams */
+  var svgs=$('.fig svg'),btn=document.getElementById('pause'),paused=false;
+  function setPaused(p){
+    paused=p; svgs.forEach(function(v){try{p?v.pauseAnimations():v.unpauseAnimations();}catch(e){}});
+    btn.setAttribute('aria-pressed',p?'true':'false'); btn.textContent=p?'Play motion':'Pause motion';
+  }
+  btn.addEventListener('click',function(){setPaused(!paused);});
+  if(reduce)setPaused(true);
+
+  /* phones: show one item at a time behind a short row of labels */
+  $('.mtabs').forEach(function(box){
+    var items=[].slice.call(box.children).filter(function(c){return c.classList.contains('mt-item');});
+    var nav=document.createElement('div'); nav.className='mt-nav';
+    function pick(n){items.forEach(function(it,j){it.classList.toggle('on',j===n);}); $('button',nav).forEach(function(b,j){b.setAttribute('aria-pressed',j===n?'true':'false');});}
+    items.forEach(function(it,n){
+      var b=document.createElement('button'); b.type='button'; b.textContent=it.getAttribute('data-label');
+      b.addEventListener('click',function(){pick(n);}); nav.appendChild(b);
+    });
+    box.parentNode.insertBefore(nav,box); pick(0);
+  });
+
+  /* choose what to see */
+  $('.chips').forEach(function(bar){
+    var btns=$('button',bar),items=$('.item',bar.parentNode);
+    function pick(g){
+      btns.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-g')===g?'true':'false');});
+      items.forEach(function(it){it.hidden=!(g==='all'||it.getAttribute('data-g')===g);});
+    }
+    btns.forEach(function(b){b.addEventListener('click',function(){pick(b.getAttribute('data-g'));});});
+    if(window.matchMedia&&window.matchMedia('(max-width: 900px)').matches)pick('systems');
+  });
+
+  /* feedback-loop wheel */
+  $('.wheel-wrap').forEach(function(w){
+    var qs=$('.wq',w),ts=$('.wtxt',w);
+    function pick(k){
+      qs.forEach(function(q){q.setAttribute('aria-pressed',q.getAttribute('data-k')===k?'true':'false');});
+      ts.forEach(function(t){t.classList.toggle('on',t.getAttribute('data-k')===k);});
+    }
+    qs.concat(ts).forEach(function(el){
+      var k=el.getAttribute('data-k');
+      el.addEventListener('click',function(){pick(k);});
+      el.addEventListener('mouseenter',function(){pick(k);});
+      el.addEventListener('focus',function(){pick(k);});
+    });
+    pick('Listen');
+  });
+
+  /* reveal on scroll */
+  var groups=['main h2','main .lede','.about-grid>img','.about-grid>div>p','.modes>div','.proof','.track','.models-head','.creds','.model','.chips','.rtabs','.also>div','.pov-grid>div>p','.opob>div','.galv ol','.wheel-wrap','.earlier','.item','.steps li','.study','.stop','.contact h2','.contact .lede','.reach li','.contact-grid>img','.figures dl div'];
+  var els=[];
+  groups.forEach(function(q){$(q).forEach(function(el){
+    if(els.indexOf(el)>-1)return; els.push(el); el.classList.add('rv');
+    var sibs=[].slice.call(el.parentNode.children).filter(function(c){return c.classList.contains('rv')||c===el;});
+    el.style.setProperty('--d',Math.min(sibs.indexOf(el),5)*90+'ms');
+  });});
+  function show(el){el.classList.add('in'); $('dt,b',el).concat(el.matches('dt')?[el]:[]).forEach(function(n){if(n.closest('.figures,.also,.rtabs,.opob'))count(n);});}
+  if('IntersectionObserver' in window&&!reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el);});
+    var first=document.querySelector('.case:not([hidden])');
+    if(first){var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){$('.nums dt',e.target).forEach(count);io2.disconnect();}});},{threshold:.2}); io2.observe(first);}
+  }else{els.forEach(function(el){el.classList.add('in');});}
+
+  /* sticky nav: mark the section in view */
+  var links=$('.subnav ul a'),map={};
+  links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  if('IntersectionObserver' in window){
+    var io3=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){links.forEach(function(a){a.classList.remove('on');}); var a=map[e.target.id]; if(a){a.classList.add('on'); var ul=a.closest('ul'); ul.scrollLeft=a.offsetLeft-ul.offsetLeft-40;}}
+    });},{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(map).forEach(function(id){var sec=document.getElementById(id); if(sec)io3.observe(sec);});
+  }
+
+  /* career spine fills as you scroll */
+  var tl=document.querySelector('.tl'),tick=false;
+  function fill(){
+    tick=false; var r=tl.getBoundingClientRect();
+    tl.style.setProperty('--p',Math.max(0,Math.min(1,(window.innerHeight*.62-r.top)/r.height)).toFixed(3));
+  }
+  if(tl&&!reduce){window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(fill);}},{passive:true}); fill();}
+})();
+</script>
+</body>
+</html>

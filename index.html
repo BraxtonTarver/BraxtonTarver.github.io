@@ -94,13 +94,18 @@ html.js .rv.in{opacity:1;transform:none}
 
 /* about */
 .about-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:64px;align-items:start}
-.about-grid img{border-radius:10px;aspect-ratio:4/5;object-fit:cover}
+.about-grid img{border-radius:10px;aspect-ratio:1/1;object-fit:cover}
 .about h2{margin-bottom:26px}
 .modes{display:grid;grid-template-columns:1fr 1fr;margin-top:40px;border-top:1px solid var(--rule)}
 .modes div{padding:28px 28px 0 0}
 .modes div+div{padding-left:28px;border-left:1px solid var(--rule)}
 .modes h3{font-size:1.7rem;margin-bottom:10px}
 .modes p{margin:0;font-size:1rem}
+.proof{display:grid;grid-template-columns:1fr 1fr;margin:36px 0 0;background:var(--signal);color:var(--pine);border-radius:10px}
+.proof div{padding:24px 26px}
+.proof div+div{border-left:1px solid rgba(2,60,91,.28)}
+.proof dt{font-family:var(--display);font-weight:700;font-size:2rem;letter-spacing:-.02em;line-height:1.05;font-variant-numeric:tabular-nums}
+.proof dd{margin:8px 0 0;font-size:1rem;line-height:1.45}
 
 /* four moments */
 .moments{background:var(--mist)}
@@ -314,6 +319,8 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
   .about-grid img{max-width:320px}
   .modes{grid-template-columns:1fr}
   .modes div+div{padding-left:0;border-left:0}
+  .proof{grid-template-columns:1fr}
+  .proof div+div{border-left:0;border-top:1px solid rgba(2,60,91,.28)}
   .track{margin-top:36px}
   .track::before,.tabs::before,.tabs::after{display:none}
   .tabs{grid-template-columns:1fr 1fr;gap:22px 16px}
@@ -443,12 +450,12 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
 
 <section class="about" id="about">
   <div class="wrap about-grid">
-    <img src="img/portrait-office.jpg" alt="Braxton Tarver at his desk in a shirt, tie, and suspenders" width="1100" height="1375" loading="lazy">
+    <img src="img/portrait-office.jpg" alt="Braxton Tarver seated in his office in a shirt, tie, and suspenders" width="1100" height="1100" loading="lazy">
     <div>
-      <h2>Two jobs, one person</h2>
+      <h2>How I lead</h2>
       <p class="lede">My work combines operating design with leading people through change.</p>
       <p>I have worked on both ends of a health plan purchase. Nine years at a carrier, Blue Shield of California, building products and researching the people who buy them. Since 2023 at a marketplace, eHealth, where I lead member loyalty and retention with scope across sales, enrollment, employer and ICHRA account management, and chat.</p>
-      <p>At Blue Shield I worked directly with CAHPS, Stars, and grievance measures. At eHealth, everything my team does is aimed at keeping members, which is what those measures reward. I bring that work to the CEO and executive team as strategy and investment recommendations.</p>
+      <p>At Blue Shield I worked directly with CAHPS, Stars, and grievance measures. At eHealth, I study why members stay with us or go elsewhere. I use what we learn to recommend investments to the CEO and executive team.</p>
       <p>I am also usually the one who walks in with something I just read from another industry and asks why we couldn't do that here.</p>
       <div class="modes">
         <div>
@@ -457,9 +464,13 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
         </div>
         <div>
           <h3>I mobilize</h3>
-          <p>I help people understand the plan, what it asks of them, and why their work matters. At Blue Shield of California I scored 100 of 100 on the Great Place to Work manager quality index, 2017 to 2021.</p>
+          <p>I help people understand the plan, what it asks of them, and why their work matters.</p>
         </div>
       </div>
+      <dl class="proof">
+        <div><dt>100 of 100</dt><dd>on the Great Place to Work manager quality index at Blue Shield of California, 2017&nbsp;to&nbsp;2023</dd></div>
+        <div><dt>+9 points</dt><dd>in my team's engagement score at eHealth, from 75 in 2024 to 84 in 2025 and 2026</dd></div>
+      </dl>
     </div>
   </div>
 </section>
@@ -495,12 +506,12 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
       <p>The first doctor visit and the first prescription are where a good enrollment gets confirmed or lost. I design the handoff from sale to service, with planned follow-up at 30, 60, and 90 days so problems surface while there is still time to fix them.</p>
     </div>
     <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
-      <h3>Who owns the member when something goes wrong?</h3>
-      <p>A stalled application, a billing error, a complaint. Friction lives in the handoffs between teams. I treat recovery as designed work with an owner, a clock, and a measure. That discipline protected $11.3M in application value.</p>
+      <h3>When a problem crosses teams, who gets back to the member?</h3>
+      <p>Whether it's a stalled application, a billing error, or a complaint, I assign someone to follow up, set a deadline, and check that the issue was resolved. In 2025, our enrollment recovery work protected $11.3M in application value.</p>
     </div>
     <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
       <h3>What do we do when the plan itself changes?</h3>
-      <p>Every fall the member decides again. I put proactive outreach ahead of that decision: In 2025 that meant 144,000 members reached and $18.4M in revenue retained, because we acted before the relationship was at risk.</p>
+      <p>In 2025, my team reached 144,000 members whose coverage was at risk. More than 23,000 changed plans and stayed with eHealth.</p>
     </div>
   </div>
 </section>
@@ -640,10 +651,10 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
         <dl class="nums"><div><dt>144,000</dt><dd>members reached</dd></div><div><dt>23,000+</dt><dd>members who changed plans and stayed with eHealth</dd></div></dl>
       </div>
       <div>
-        <h3>What if we reached members before they had a reason to leave?</h3>
+        <h3>When members needed a new plan, would they choose eHealth again?</h3>
         <dl class="why">
           <dt>What I did</dt><dd>In 2025 my team proactively reached 144,000 members whose coverage was at risk, through Operation Protect Our Book.</dd>
-          <dt>Why it matters</dt><dd>The outreach retained $18.4M in revenue that eHealth would otherwise have lost.</dd>
+          <dt>Why it matters</dt><dd>The program retained $18.4M in revenue in 2025.</dd>
         </dl>
       </div>
     </article>
@@ -671,7 +682,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
         <h3>What happens to an application after the sale?</h3>
         <dl class="why">
           <dt>What I did</dt><dd>Mapped the path from submitted application to approved member, gave every step an owner across internal teams and carriers, and built recovery into the process.</dd>
-          <dt>Why it matters</dt><dd>The friction sat in the handoffs, where no single team owned the member. Closing them produced a 93.8% approval rate, a ten-year best early cancellation rate, and $11.3M in application value protected in 2025.</dd>
+          <dt>Why it matters</dt><dd>The friction sat in the handoffs, where no single team owned the follow-up. Closing them produced a 93.8% approval rate, a ten-year best early cancellation rate, and $11.3M in application value protected in 2025.</dd>
         </dl>
       </div>
     </article>
@@ -684,7 +695,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
       <div>
         <h3>Can you rebuild the operating model without the operation slowing down?</h3>
         <dl class="why">
-          <dt>What I did</dt><dd>Reengineered operating models and vendor partnerships in the middle of an enterprise transformation, including a large move of work back onshore, and stood up 400 seasonal advocates and 20 supervisors with no break in service.</dd>
+          <dt>What I did</dt><dd>I changed how we worked with vendors and moved part of the work back to the U.S. We staffed the enrollment season with 400 advocates and 20 supervisors.</dd>
           <dt>Why it matters</dt><dd>We maintained service throughout the transition. In 2025 the organization finished $2.63M favorable to plan and delivered $1.2M in structural savings, with enrollment above the prior year.</dd>
         </dl>
       </div>
@@ -709,14 +720,14 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
     <p class="lede">In 2025 I introduced an AI agent into customer service. It answers first, handles the routine questions, and hands everything else to a person with the context attached.</p>
     <dl class="nums opob">
       <div><dt>1 second</dt><dd>average wait when the agent answered in 2025, against minutes in a human queue</dd></div>
-      <div><dt>40,000+</dt><dd>customer service calls answered by the agent in 2025, its first year, every one of them picked up</dd></div>
+      <div><dt>40,000+</dt><dd>customer service calls the agent answered in 2025</dd></div>
       <div><dt>77%</dt><dd>of callers rated the experience exceptional, as eHealth has reported publicly</dd></div>
     </dl>
     <p class="src">Satisfaction figure: <a href="https://news.ehealthinsurance.com/news/ehealth-advances-its-ai-strategy-with-expanded-voice-agent-capabilities">eHealth announcement, November 2025</a>.</p>
     <ol class="steps">
       <li><div><strong>Start with the member problem</strong><span>People were waiting on hold to ask where their application stood, when their ID card would arrive, or who to call about a bill. Those became the agent's first jobs.</span></div></li>
       <li><div><strong>Keep a person accountable</strong><span>Most calls still reach a human, by design. The agent takes what it can finish and routes the rest, with privacy and compliance in the room from the start.</span></div></li>
-      <li><div><strong>Scale what improves</strong><span>We track how many calls the agent resolves on its own and widen its job as that number improves.</span></div></li>
+      <li><div><strong>Scale what improves</strong><span>Before we give the voice agent another kind of call, I want to know whether members get the help they need the first time or have to call back about the same issue.</span></div></li>
     </ol>
   </div>
 </section>
@@ -751,7 +762,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
     <div class="opob-head">
       <div>
     <h2>Mobilizing people, in practice</h2>
-    <p class="lede">Every fall, Medicare members get an Annual Notice of Change. For a fast-growing number, it says their plan is ending. I built a response to that moment before it became an industry-wide problem, and named it Operation Protect Our Book.</p>
+    <p class="lede">A member can be happy with their Medicare Advantage plan and still get a letter saying it will end. I built Operation Protect Our Book so our advocates could help those members choose coverage for the coming year.</p>
       </div>
       <img class="opob-logo" src="img/logo-opob.png" alt="Operation Protect Our Book logo" width="900" height="420">
     </div>
@@ -921,7 +932,7 @@ footer .wrap{border-top:1px solid var(--rule-dark);padding-top:22px}
   });
 
   /* reveal on scroll */
-  var groups=['main h2','main .lede','.about-grid>img','.about-grid>div>p','.modes>div','.track','.models-head','.creds','.model','.chips','.rtabs','.also>div','.pov-grid>div>p','.opob>div','.galv ol','.wheel-wrap','.earlier','.item','.steps li','.study','.stop','.contact h2','.contact .lede','.reach li','.contact-grid>img','.figures dl div'];
+  var groups=['main h2','main .lede','.about-grid>img','.about-grid>div>p','.modes>div','.proof','.track','.models-head','.creds','.model','.chips','.rtabs','.also>div','.pov-grid>div>p','.opob>div','.galv ol','.wheel-wrap','.earlier','.item','.steps li','.study','.stop','.contact h2','.contact .lede','.reach li','.contact-grid>img','.figures dl div'];
   var els=[];
   groups.forEach(function(q){$(q).forEach(function(el){
     if(els.indexOf(el)>-1)return; els.push(el); el.classList.add('rv');
